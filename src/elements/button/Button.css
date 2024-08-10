@@ -1,0 +1,15 @@
+.button{
+     padding: 12px;
+     border-radius: 7px;
+     border: 0px;
+     background-color: #EB3235;
+     /* background: linear-gradient(to top, #851C1E,#EB3235); */
+     color: white;
+     box-shadow: 0px 4px 4px 0px #00000040;
+     font-size: 16px;
+     font-weight: 700;
+}
+
+.forgot-password-button{
+     margin: 24px 0px;
+}

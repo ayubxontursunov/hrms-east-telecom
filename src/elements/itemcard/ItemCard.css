@@ -1,0 +1,88 @@
+/* #434242
+
+#E31E24
+
+233B54
+
+FFC929
+
+D9D9D9
+
+55AB7A */
+.item-card {
+     background: #434242;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     overflow: hidden;
+     text-align: center;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s;
+     display: grid;
+     grid-template-rows: 33% 33% 33%;
+     grid-template-columns: 60% 40%;
+     padding: 10px;
+     position: relative;
+     color: #F5F5F5;
+}
+
+.item-card::after{
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 5px;
+     left: 0;
+     top: 0;
+     background-color: red;
+}
+.icon-view{
+     transition: 0.5s;
+}
+
+
+.item-image {
+     width: 50%;
+     height: auto;
+     grid-row: 1;
+     grid-column: 2 /3;
+     margin-left: auto;
+}
+
+
+.item-title {
+     font-size: 1.2em;
+     grid-row: 1;
+     grid-column: 1 /1;
+     margin-right: auto;
+     margin-top: auto;
+}
+
+.item-label {
+     grid-row: 2;
+     grid-column: 1 /1;
+     margin-right: auto;
+     margin-top: 5px;
+}
+
+.item-link {
+     text-decoration: none;
+     border-radius: 4px;
+     grid-row: 3;
+     grid-column: 2;
+     width: max-content;
+     height: max-content;
+     margin-top: auto;
+     margin-left: auto;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     transition: 0.5s;
+     color: white;
+}
+
+.item-link:hover .icon-view{
+     transform: translateX(4px);
+     color: white;
+}
+.item-link:hover{
+     color: white;
+}

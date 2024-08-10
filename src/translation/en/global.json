@@ -1,0 +1,72 @@
+{
+     "sidebar":{
+          "dashboard":"Dashboard",
+          "all-employees":"All employees",
+          "announcement":"Announcement",
+          "training":"Training",
+          "documents":"Documents",
+          "leaves":"Leaves",
+          "log-out":"Log out"
+     },
+     "dashboard":{
+          "first-section":{
+               "title1":"Company",
+               "label1":"8 departments",
+               "link":"view",
+               "title2":"Employees",
+               "label2":"750 employees",
+               "title3":"Users",
+               "label3":"400 Users",
+               "title4":"Training",
+               "label4":"7 training"
+          },
+          "middle":{
+               "type-casual":"Casual leave",
+               "type-late-entry":"Late entry",
+               "type-maternity":"Maternity leave",
+               "type-sick":"Sick leave",
+               "status-pending":"Pending",
+               "status-rejected":"Rejected",
+               "status-approved":"Approved",
+               "calendar":"Calendar",
+               "approval":"Approval",
+               "date":"DATE",
+               "type":"APPLICATION TYPE",
+               "duration":"DURATION",
+               "status":"STATUS"
+          },
+          "bottom":{
+               "title1":"Annual Retreat",
+               "title2":"Google technologies",
+               "title3":"Zoom technologies",
+               "date1":"25 June",
+               "date2":"26 June",
+               "date3":"27 June",
+               "desc1":"Fake Data-Annual Retreat-Annual Retreat is a way to gain strength and refresh",
+               "desc2":"Fake Data-Google is providing new technologies to teach employees about the methods of improving efficiency",
+               "desc3":"Fake Data-Zoom is providing new technologies to teach employees about the methods of improving efficiency",
+               "details":"Details"
+          }
+     },
+     "allemployees":{
+          "manageuser":"Manage User",
+          "employeename":"Employee Name",
+          "department":"Department",
+          "division":"Division",
+          "action":"Action"
+     },
+     "button":{
+          "edit":"Edit",
+          "create":"Create",
+          "save":"Save",
+          "delete":"Delete",
+          "view":"View"
+     },
+     "announcement":{
+          "announcement-title":"Announcement",
+          "announcement-admin-title":"Manage Announcement",
+          "announcement-title-show":"Title",
+          "announcement-description-show":"Description",
+          "action":"Action"
+     }
+}

@@ -1,0 +1,72 @@
+{
+  "sidebar": {
+    "dashboard": "대시보드",
+    "all-employees": "모든 직원",
+    "announcement": "공지",
+    "training": "훈련",
+    "documents": "문서",
+    "leaves": "휴가",
+    "log-out": "로그 아웃"
+  },
+  "dashboard": {
+    "first-section": {
+      "title1": "회사",
+      "label1": "8 부서",
+      "link": "보기",
+      "title2": "직원",
+      "label2": "750 직원",
+      "title3": "사용자",
+      "label3": "400 사용자",
+      "title4": "훈련",
+      "label4": "7 훈련"
+    },
+    "middle": {
+      "type-casual": "연차",
+      "type-late-entry": "지각",
+      "type-maternity": "출산 휴가",
+      "type-sick": "병가",
+      "status-pending": "대기 중",
+      "status-rejected": "거부됨",
+      "status-approved": "승인됨",
+      "calendar": "일정",
+      "approval": "승인",
+      "date": "날짜",
+      "type": "신청 유형",
+      "duration": "기간",
+      "status": "상태"
+    },
+    "bottom": {
+      "title1": "연례 후퇴",
+      "title2": "Google 기술",
+      "title3": "Zoom 기술",
+      "date1": "6월 25일",
+      "date2": "6월 26일",
+      "date3": "6월 27일",
+      "desc1": "가짜 데이터 - 연례 후퇴 - 연례 후퇴는 힘을 얻고 새롭게 하는 방법입니다.",
+      "desc2": "가짜 데이터 - Google은 직원들에게 효율성을 높이는 방법을 가르치기 위해 새로운 기술을 제공합니다.",
+      "desc3": "가짜 데이터 - Zoom은 직원들에게 효율성을 높이는 방법을 가르치기 위해 새로운 기술을 제공합니다.",
+      "details": "세부 사항"
+    }
+  },
+  "allemployees": {
+    "manageuser": "사용자 관리",
+    "employeename": "직원 이름",
+    "department": "부서",
+    "division": "부문",
+    "action": "조치"
+  },
+  "button": {
+    "edit": "편집",
+    "create": "생성",
+    "save": "저장",
+    "delete": "삭제",
+    "view": "보기"
+  },
+  "announcement": {
+    "announcement-title": "공지",
+    "announcement-admin-title": "공지 관리",
+    "announcement-title-show": "제목",
+    "announcement-description-show": "설명",
+    "action": "행동"
+  }
+}

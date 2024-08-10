@@ -1,0 +1,22 @@
+.training-grid{
+     display: grid;
+     grid-template-columns: 25% 50% 25%;
+     justify-content: space-between;
+     align-items: center;     
+     color: #0E0D0D;
+     font-weight: 700;
+     padding: 10px 15px;
+}
+
+.training-content{
+     display: grid;
+     grid-template-columns: 25% 50% 25%;
+     justify-content: space-between;
+     border: 1px solid #979393;
+     border-radius: 7px;
+     padding: 10px 15px;
+     align-items: center;
+} 
+.manage-training-container{
+     position: relative;
+}

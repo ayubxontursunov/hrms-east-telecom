@@ -1,0 +1,16 @@
+.logo-container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;    
+     max-width: 175px;
+     width: 100%;
+     cursor: pointer;
+}
+.logo-img{
+     width: 90px;
+}
+.logo-title{
+     color: #48484A;
+     font-weight: 700;
+     font-size: 16px;
+}

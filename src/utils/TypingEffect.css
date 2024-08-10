@@ -1,0 +1,12 @@
+/* TypingEffect.css */
+.second-section_text {
+     font-size: 1.5rem;
+     font-family: 'Courier New', Courier, monospace;
+     white-space: pre-wrap;
+     transition: 0.5s;
+     opacity: 1; 
+   }
+   
+   .second-section_text.hidden {
+     opacity: 0; 
+   }

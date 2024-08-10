@@ -1,0 +1,54 @@
+.button_view {
+     padding: 4px 8px;
+     border: 1px solid #2196F3;
+     border-radius: 7px;
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 4px;
+     color: #2196F3;
+     font-weight: bold;
+ }
+ .button_view:hover{
+     background: #2196F3;
+     color: white;
+ }
+ .button_edit {
+     padding: 4px 8px;
+     border: 1px solid #136D12;
+     border-radius: 7px;
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 4px;
+     color: #136D12;
+     font-weight: bold;
+ }
+ .button_edit:hover{
+     background: #136D12;
+     color: white;
+ }
+ 
+ .button_delete {
+     padding: 4px 8px;
+     border: 1px solid #9A1712;
+     border-radius: 7px;
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 4px;
+     color: #9A1712;
+     font-weight: bold;
+ }
+ .button_delete:hover{
+     background: #9A1712;
+     color: white;
+}
+.action_state{
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}

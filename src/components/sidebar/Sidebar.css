@@ -1,0 +1,58 @@
+.sidebar{
+     width: 20%;
+     height: 100vh;
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     background-color: #E0E0E0;
+     padding: 45px 8px;
+     justify-content: space-between;
+     border-right: 0.1px solid rgba(0, 0, 0, 0.396);
+}
+.sidebar-nav{
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+}
+.navlink{
+     height: 50px;
+     padding-left: 20px;
+     color: #979393;
+     border-radius: 7px;
+     border: unset;
+     transition: 1.5s ease;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     border: 0.1px solid rgba(0, 0, 0, 0.434);
+}
+.sidebar-icon{
+     font-size: 18px;
+}
+.navlink:hover{
+     color: white;
+     background: linear-gradient(to top, #851C1F, #EB3236);
+}
+.active {
+     color: white;
+     position: relative;
+     background: linear-gradient(to top, #851C1F, #EB3236);
+     overflow: hidden;
+}
+
+.leave-button{
+     max-width: 185px;
+     height: 40px;
+     padding-left: 12px;
+     width: 100%;
+     background: linear-gradient(to top, #851C1F, #EB3236);
+     border-radius: 7px;
+     border: unset;
+     color: white;
+     font-size: 16px;
+     text-align: start;
+     margin: 0px auto;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}

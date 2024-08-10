@@ -1,0 +1,107 @@
+.leaves-grid{
+     display: grid;
+     grid-template-columns: 17% 19% 17% 11% 11% 25%;
+     justify-content: space-between;
+     align-items: center;     
+     color: #0E0D0D;
+     font-weight: 700;
+     padding: 10px 15px;
+}
+.leaves-content{
+     display: grid;
+     grid-template-columns: 17% 19% 17% 11% 11% 25%;
+     justify-content: space-between;
+     border: 1px solid #979393;
+     border-radius: 7px;
+     padding: 10px 15px;
+     align-items: center;
+}
+
+.pending-item-separate{
+     position: relative;
+     color: #FF9600;
+     z-index: 0;
+}
+
+.pending-item-separate::before{
+     width: 90%;
+     position: absolute;
+     background-color: #FFF3DE;
+     content: "";
+     z-index: -1;
+     border-radius: 7px;
+     height: 25px;
+     top: -4px;
+     left: -15px;
+}
+.approved-item-separate{
+     position: relative;
+     color: #2196F3;
+     z-index: 0;
+}
+
+.approved-item-separate::before{
+     width: 90%;
+     position: absolute;
+     background-color: #E3F2FD;
+     content: "";
+     z-index: -1;
+     border-radius: 7px;
+     height: 25px;
+     top: -4px;
+     left: -15px;
+}
+
+
+.rejected-item-separate{
+     position: relative;
+     color: #EF6E68;
+     z-index: 0;
+}
+
+.rejected-item-separate::before{
+     width: 90%;
+     position: absolute;
+     background-color: #FFEAED;
+     content: "";
+     z-index: -1;
+     border-radius: 7px;
+     height: 25px;
+     top: -4px;
+     left: -15px;
+}
+
+.all-comp-search-wrap{
+     position: relative;
+}
+.all-comp-search-icon{
+     position: absolute;
+     right: 10px;
+     top: 6px;
+}
+.form-select{
+     border-radius: 7px;
+}
+.manage-leave-container{
+     position: relative;
+     width: 100%;
+}
+.comp-div-for-display-information-for-all{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100%;
+     background-color: white;
+     border-radius: 7px;
+     padding: 10px 12px;
+}
+.comp-div-for-display-button{
+     position: absolute;
+     border: none;
+     right: 10px;
+     top: 10px;
+     color: white;
+     padding: 5px 10px;
+     border-radius: 7px;
+}

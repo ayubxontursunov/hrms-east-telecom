@@ -1,0 +1,148 @@
+.grid-container {
+     display: grid;
+     grid-template-rows: 110px;
+     grid-template-columns: 22% 24% 27% 23%;
+     justify-content: space-between;
+     background-color: white;
+     padding: 12px 24px;
+     border-radius: 7px;
+}
+.middle-container{
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+}
+
+.middle-right{
+     width: 70%;
+     padding: 10px 0px;
+     background-color: white;
+     border-radius: 7px;
+     padding-bottom: 90px;
+}
+.middle-list-grid{
+     display: grid;
+     padding: 12px 19px;
+     grid-template-columns: 15% 30% 30% 25%;
+     color: #979393;
+}
+.ul-grid{
+     display: grid;
+     grid-template-rows: 20px;
+     grid-template-columns: 15% 30% 30% 25%;
+     justify-content: space-between;
+     padding: 12px 19px;
+     color: #424242;
+}
+.middle-title{
+     color: #424242;
+     font-size: 16px;
+     margin-bottom: 10px;
+     margin-left: 19px;
+}
+
+.ul-grid-color{
+     background-color: #FAFAFA;
+}
+
+.middle-right-bottom-ul{
+     padding: 12px 19px;
+     gap: 55px;
+     color: #616161;
+     font-size: 14px;
+     margin-left: 18px;
+     margin-top: 24px;
+}
+
+.middle-right-bottom-ul li{
+     position: relative;
+} 
+.middle-right-bottom-ul li::after{
+     content: "";
+     position: absolute;
+     width: 9px;
+     height: 9px;
+     top: 4px;
+     left: -17px;
+}
+.middle-right-bottom-ul .item-1::after{
+     background-color: #2196F3;
+}
+.middle-right-bottom-ul .item-2::after{
+     background-color: #EF6E68;
+}
+.middle-right-bottom-ul .item-3::after{
+     background-color: #FF9600;
+}
+.ul-grid-item{
+     position: relative;
+     z-index: 0;
+}
+
+.ul-grid-item::after{
+     content: "";
+     position: absolute;
+     width: 110px;
+     height: 25px;
+     top: -3px;
+     left: -6px;
+     z-index: -1;
+     border-radius: 7px;
+}
+.approved-item{
+     color: #2196F3;
+
+}
+
+.approved-item::after{
+     background-color: #E3F2FD;
+}
+.rejected-item{
+     color: #EF6E68;
+
+}
+
+.rejected-item::after{
+     background-color: #FFEAED;
+}
+.pending-item{
+     color: #FF9600;
+
+}
+
+.pending-item::after{
+     background-color: #FFF3DE;
+}
+
+.middle-left{
+     width: 30%;
+     background-color: white;
+     padding: 12px 10px;
+     border-radius: 7px;
+}
+
+.announcement-page{
+     background-color: white;
+     width: 50%;
+     border-radius: 7px;
+     padding: 18px 0px;
+}
+
+.announcement-wrap{
+     display: flex;
+     justify-content: space-between;
+     padding-left: 19px;
+     padding-right: 30px;     
+     color: #424242;
+     position: relative;
+}
+.announcement-wrap-link,.announcement-wrap-icon{
+     color: #1E88E5;
+}
+
+.announcement-wrap-icon{
+     position: absolute;
+     right: 8px;
+     top: 1px;
+}
