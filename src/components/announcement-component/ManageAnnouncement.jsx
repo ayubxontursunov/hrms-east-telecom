@@ -66,7 +66,7 @@ function ManageAnnouncement() {
 
   return (
     <div className="manage-announcement-container">
-      <h3 className="title">{t("announcement.announcement-admin-title")}</h3>
+      <h3 className="title">Announcement</h3>
       <div className="create-search-field">
         {Key((state)=>state.isAdmin)?        <button onClick={() => openModal()} className="search-field-button">
           {t("button.create")}

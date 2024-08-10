@@ -1,0 +1,46 @@
+
+.profile-header-vw {
+     margin-bottom: 20px;
+}
+
+.upload-button-vw {
+     margin-top: 20px;
+     text-align: center;
+}
+
+.upload-button-vw {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 16px;
+     color: #fff;
+     background-color: var(--color-dark-red);
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+
+
+.upload-input {
+     display: none;
+}
+
+
+.upload-button-view-vw {
+     padding: 8px 15px;
+     font-size: 14px;
+     background-color: var(--color-dark-red);
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+.upload-button-view-vw:hover {
+     background-color: #0056b3;
+}
+
+.upload-input-vw {
+     display: none;
+}
+

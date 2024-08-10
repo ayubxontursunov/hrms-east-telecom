@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path: 'about-hrms',
         element: <ClickLogo />,
-      },
+      }
     ],
   },
   {

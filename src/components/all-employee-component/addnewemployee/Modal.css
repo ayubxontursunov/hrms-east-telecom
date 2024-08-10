@@ -30,6 +30,7 @@
      top: 20%;
      z-index: 1000; 
      background-color: white;
+     border-radius: 7px;
 }
 
 .close-form-button{

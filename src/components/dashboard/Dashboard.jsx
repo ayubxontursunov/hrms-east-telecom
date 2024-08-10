@@ -7,6 +7,8 @@ import "./Dashboard.css";
 import CalendarComponent from "../../elements/calendarpicker/Calendarpicker.jsx";
 import AnnouncementCard from "../../elements/announcementcard/AnnouncementCard.jsx";
 import { IoIosArrowForward } from "react-icons/io";
+import DoughnutChart from "../dashboardgraphs/graph-1/DoughnutChart.jsx";
+import SatisfactionLineChart from "../dashboardgraphs/graph-2/SatisficationLineChart.jsx";
 function Dashboard() {
   const { t } = useTranslation("global");
   const data1 = createData1(t);
@@ -28,6 +30,10 @@ function Dashboard() {
             />
           );
         })}
+      </div>
+      <div className="graph-container">
+        <div className="graph-div"><DoughnutChart/></div>
+        <div className="graph-div"><SatisfactionLineChart/></div>
       </div>
       <div className="middle-container">
         <div className="middle-right">

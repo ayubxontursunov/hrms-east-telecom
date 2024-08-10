@@ -1,0 +1,26 @@
+.chart-container {
+     /* Center the chart horizontally */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     width: 90%;
+     height: 350px; /* Adjust height as needed */
+   }
+   
+   .chart-title {
+     /* Style for the chart title */
+     text-align: center;
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     color: #333;
+   }
+   
+   .chart-container canvas {
+     /* Ensure the chart takes up available space */
+     width: 100% !important;
+     height: 100% !important;
+   }
+ 

@@ -10,10 +10,9 @@ import Form3 from "../addnewemployee/contact/Contact";
 import Form4 from "../addnewemployee/documents/Documents";
 import Form5 from "../addnewemployee/report/Report";
 import { CiSearch } from "react-icons/ci";
-import lilyImage from "../../../image/viewinformation2.jpg"
-import arthurImage from "../../../image/viewinformation1.jpg"
-import EmployeeSkillsBarChart from "../../employeeinformation/EmployeeSkillsBarChart";
-
+import lilyImage from "../../../image/viewinfo2.jpg";
+import arthurImage from "../../../image/viewinfo1.jpg";
+import UserViews from "../../../exceldataemployee/UserViews";
 function ManageUser() {
   const { t } = useTranslation("global");
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,7 +26,7 @@ function ManageUser() {
         lastName: "Evilyn",
         dateOfBirth: "1990-01-01",
         maritalStatus: "Single",
-        img:lilyImage,
+        img: lilyImage,
       },
       workInfo: {
         employmentType: "Full-time",
@@ -61,7 +60,7 @@ function ManageUser() {
         lastName: "Johnson",
         dateOfBirth: "1990-01-01",
         maritalStatus: "Single",
-        img:arthurImage,
+        img: arthurImage,
       },
       workInfo: {
         employmentType: "Full-time",
@@ -83,7 +82,7 @@ function ManageUser() {
         document2: "coverletter.pdf",
       },
       reportInfo: {
-        supervisor: "John Doe",
+        supervisor: "John William",
         firstApprover: "Jane Smith",
         secondApprover: "Robert Brown",
       },
@@ -93,8 +92,22 @@ function ManageUser() {
   const [employees, setEmployees] = useState(allData);
   const [formData, setFormData] = useState({
     id: null,
-    personalInfo: { firstName: "", lastName: "", dateOfBirth: "", maritalStatus: "" },
-    workInfo: { employmentType: "", duty: "", department: "", team: "", jobTitle: "", wages: "", joinedDate: "", education: "" },
+    personalInfo: {
+      firstName: "",
+      lastName: "",
+      dateOfBirth: "",
+      maritalStatus: "",
+    },
+    workInfo: {
+      employmentType: "",
+      duty: "",
+      department: "",
+      team: "",
+      jobTitle: "",
+      wages: "",
+      joinedDate: "",
+      education: "",
+    },
     contactInfo: { region: "", phoneNumber: "", email: "" },
     documents: { document1: "", document2: "" },
     reportInfo: { supervisor: "", firstApprover: "", secondApprover: "" },
@@ -117,8 +130,22 @@ function ManageUser() {
       // Creating a new employee
       setFormData({
         id: null,
-        personalInfo: { firstName: "", lastName: "", dateOfBirth: "", maritalStatus: "" },
-        workInfo: { employmentType: "", duty: "", department: "", team: "", jobTitle: "", wages: "", joinedDate: "", education: "" },
+        personalInfo: {
+          firstName: "",
+          lastName: "",
+          dateOfBirth: "",
+          maritalStatus: "",
+        },
+        workInfo: {
+          employmentType: "",
+          duty: "",
+          department: "",
+          team: "",
+          jobTitle: "",
+          wages: "",
+          joinedDate: "",
+          education: "",
+        },
         contactInfo: { region: "", phoneNumber: "", email: "" },
         documents: { document1: "", document2: "" },
         reportInfo: { supervisor: "", firstApprover: "", secondApprover: "" },
@@ -174,7 +201,9 @@ function ManageUser() {
   };
 
   const filteredData = employees.filter((employee) =>
-    employee.personalInfo.firstName.toLowerCase().includes(searchTerm.toLowerCase())
+    employee.personalInfo.firstName
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase())
   );
 
   const sortedData = filteredData.sort((a, b) => {
@@ -200,7 +229,9 @@ function ManageUser() {
   return (
     <div className="manage-user-container">
       <h3 className="title">
-        {Key((state) => state.isAdmin) ? t("allemployees.manageuser") : t("sidebar.all-employees")}
+        {Key((state) => state.isAdmin)
+          ? t("allemployees.manageuser")
+          : t("sidebar.all-employees")}
       </h3>
       <div className="create-search-field">
         {Key((state) => state.isAdmin) ? (
@@ -212,7 +243,7 @@ function ManageUser() {
           <input
             className="search-field"
             type="text"
-            placeholder={t("search")}
+            placeholder="Search"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -232,7 +263,11 @@ function ManageUser() {
             <li className="separate-bar">{employee.workInfo.department}</li>
             <li className="separate-bar">{employee.workInfo.team}</li>
             <li>
-              <Button onView={() => handleViewInformation(employee)} onEdit={() => openModal(employee)} onDelete={() => handleDelete(employee.id)} />
+              <Button
+                onView={() => handleViewInformation(employee)}
+                onEdit={() => openModal(employee)}
+                onDelete={() => handleDelete(employee.id)}
+              />
             </li>
           </ul>
         ))}
@@ -245,38 +280,119 @@ function ManageUser() {
         overlayClassName="modal-overlay"
         shouldCloseOnOverlayClick={false}
       >
-        <h2 className="modal-title">{!formData.id ? "Add a New Employee" : "Edit Employee Information"}</h2>
-        {currentForm === 1 && <Form1 formData={formData} setFormData={setFormData} next={nextForm} />}
-        {currentForm === 2 && <Form2 formData={formData} setFormData={setFormData} next={nextForm} previous={previousForm} />}
-        {currentForm === 3 && <Form3 formData={formData} setFormData={setFormData} next={nextForm} previous={previousForm} />}
-        {currentForm === 4 && <Form4 formData={formData} setFormData={setFormData} next={nextForm} previous={previousForm} />}
-        {currentForm === 5 && <Form5 formData={formData} setFormData={setFormData} previous={previousForm} close={closeModal} />}
+        <h2 className="modal-title">
+          {!formData.id ? "Add a New Employee" : "Edit Employee Information"}
+        </h2>
+        {currentForm === 1 && (
+          <Form1
+            formData={formData}
+            setFormData={setFormData}
+            next={nextForm}
+          />
+        )}
+        {currentForm === 2 && (
+          <Form2
+            formData={formData}
+            setFormData={setFormData}
+            next={nextForm}
+            previous={previousForm}
+          />
+        )}
+        {currentForm === 3 && (
+          <Form3
+            formData={formData}
+            setFormData={setFormData}
+            next={nextForm}
+            previous={previousForm}
+          />
+        )}
+        {currentForm === 4 && (
+          <Form4
+            formData={formData}
+            setFormData={setFormData}
+            next={nextForm}
+            previous={previousForm}
+          />
+        )}
+        {currentForm === 5 && (
+          <Form5
+            formData={formData}
+            setFormData={setFormData}
+            previous={previousForm}
+            close={closeModal}
+          />
+        )}
       </Modal>
 
       {viewInformation && viewInformationData && (
         <div className="display-view-information display-view-information-open">
-          <button className="view-information-div-close-button" onClick={handleBack}>Back</button>
+          <button
+            className="view-information-div-close-button"
+            onClick={handleBack}
+          >
+            Back
+          </button>
+          <br />
           <h2>Employee Information</h2>
+          <hr className="horizontal-line"/>
           <div className="viewinformation-wrap">
-          <div className="viewinformation-left">
-            <img className="viewinformation-image" src={viewInformationData.personalInfo.img} alt="" />
-          <p><strong>First Name:</strong> {viewInformationData.personalInfo.firstName}</p>
-          <p><strong>Last Name:</strong> {viewInformationData.personalInfo.lastName}</p>
-          <p><strong>Employment Type:</strong> {viewInformationData.workInfo.employmentType}</p>
-          <p><strong>Duty:</strong> {viewInformationData.workInfo.duty}</p>
-          <p><strong>Department:</strong> {viewInformationData.workInfo.department}</p>
-          <p><strong>Divison:</strong> {viewInformationData.workInfo.team}</p>
-          <p><strong>Job Title:</strong> {viewInformationData.workInfo.jobTitle}</p>
-          <p><strong>Joined Date:</strong> {viewInformationData.workInfo.joinedDate}</p>
-          <p><strong>Phone Number:</strong> {viewInformationData.contactInfo.phoneNumber}</p>
-          <p><strong>Supervisor:</strong> {viewInformationData.reportInfo.supervisor}</p>
+            <div className="viewinformation-left">
+              <img
+                className="viewinformation-image"
+                src={viewInformationData.personalInfo.img}
+                alt=""
+              />
+              <p className="user-view-item-1">
+                <strong>First Name:</strong>{" "}
+                {viewInformationData.personalInfo.firstName}
+              </p>
+              <p className="user-view-item-2">
+                <strong>Last Name:</strong>{" "}
+                {viewInformationData.personalInfo.lastName}
+              </p>
+              <p className="user-view-item-3">
+                <strong>Employment Type:</strong>{" "}
+                {viewInformationData.workInfo.employmentType}
+              </p>
+              <p className="user-view-item-4">
+                <strong>Duty:</strong> {viewInformationData.workInfo.duty}
+              </p>
+              <p className="user-view-item-5">
+                <strong>Department:</strong>{" "}
+                {viewInformationData.workInfo.department}
+              </p>
+              <p className="user-view-item-6">
+                <strong>Divison:</strong> {viewInformationData.workInfo.team}
+              </p>
+              <p className="user-view-item-7">
+                <strong>Job Title:</strong>{" "}
+                {viewInformationData.workInfo.jobTitle}
+              </p>
+              <p className="user-view-item-8">
+                <strong>Joined Date:</strong>{" "}
+                {viewInformationData.workInfo.joinedDate}
+              </p>
+              <p className="user-view-item-9">
+                <strong>Phone Number:</strong>{" "}
+                {viewInformationData.contactInfo.phoneNumber}
+              </p>
+              <p className="user-view-item-10">
+                <strong>Supervisor:</strong>{" "}
+                {viewInformationData.reportInfo.supervisor}
+              </p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <h2>Performance and Skills</h2>
+            <hr className="horizontal-line"/>
+            <div className="viewinformation-right">
+              <UserViews />
+            </div>
           </div>
-          <div className="viewinformation-right">
-            <EmployeeSkillsBarChart/>
-          </div>
-          </div>
-
-
         </div>
       )}
     </div>
@@ -284,5 +400,3 @@ function ManageUser() {
 }
 
 export default ManageUser;
-
-
