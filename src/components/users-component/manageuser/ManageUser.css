@@ -170,3 +170,16 @@ ul{
      margin-top: 10px;
      color: rgba(162, 161, 168, 0.2);
 }
+
+.user-content-wrap{
+     display: flex;
+     gap: 10px;
+}
+.user-content{
+     width: 25%;
+     display: grid;
+     gap: 5px;
+     border: 1px solid;
+     border-radius: 7px;
+     padding: 10px 5px;
+}

@@ -109,7 +109,6 @@ function ManageAnnouncement() {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
-        
           <h2 className="modal-title">{!formData.id?"Create a New Announcement":"Edit an Announcement"}</h2>
         <div className="form-container">
           <label className="form-label">Title</label>
@@ -131,7 +130,7 @@ function ManageAnnouncement() {
             onChange={(e) => setFormData({ ...formData, expireDate: e.target.value })}
           />
           <button className="form-button" onClick={handleSave}>Save</button>
-        </div>
+          </div>
       </Modal>
       {closediv ? (
         <div className="comp-div-for-display-information-for-all">

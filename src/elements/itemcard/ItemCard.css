@@ -73,8 +73,4 @@
 
 .item-link:hover .icon-view{
      transform: translateX(4px);
-     color: white;
-}
-.item-link:hover{
-     color: white;
 }

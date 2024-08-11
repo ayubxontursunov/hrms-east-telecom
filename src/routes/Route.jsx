@@ -12,6 +12,10 @@ import Leaves from '../components/leaves/Leaves';
 import Profile from '../components/profile/Profile';
 import NotificationComponent from '../components/notification-component/NotificationComponent';
 import ClickLogo from '../components/clicklogocomp/ClickLogo';
+import Company from '../components/dashboard-component/company/Company';
+import Users from '../components/users-component/manageuser/ManageUser'
+import ProjectBarChart from '../components/project-component/Projects';
+import LinkDirect from '../components/link-direct/LinkDirect';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -69,6 +73,22 @@ const router = createBrowserRouter([
       {
         path: 'about-hrms',
         element: <ClickLogo />,
+      },
+      {
+        path: 'company',
+        element: <Company />,
+      },
+      {
+        path: 'users',
+        element: <Users />,
+      },
+      {
+        path: 'projects',
+        element: <ProjectBarChart />,
+      },
+      {
+        path: 'link-direct',
+        element: <LinkDirect />,
       }
     ],
   },

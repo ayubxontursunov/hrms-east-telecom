@@ -1,0 +1,19 @@
+.loading-container{
+     position: absolute;
+     background-color: white;
+     width: 100vw;
+     height: 100vh;
+     z-index: 100;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 10px;
+}
+.loading-logo-img{
+     width: 90px;
+}
+.loading-container-element-wrap{
+     display: flex;
+     align-items: center;
+}

@@ -1,3 +1,20 @@
 .manage-documents-container{
      position: relative;
 }
+.document-content-wrap{
+     display: flex;
+     gap: 10px;
+}
+.document-content{
+     width: 25%;
+     display: grid;
+     grid-template-rows: 30px 50px 10px 25px;
+     gap: 5px;
+     border: 1px solid;
+     border-radius: 7px;
+     padding: 10px 5px;
+}
+
+.horizontal-line-card{
+     height: 1px;
+}

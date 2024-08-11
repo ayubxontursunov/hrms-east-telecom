@@ -56,246 +56,8 @@ function ManageUser() {
     {
       id: 2,
       personalInfo: {
-        firstName: "John",
+        firstName: "Arthur",
         lastName: "Johnson",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 3,
-      personalInfo: {
-        firstName: "Steven",
-        lastName: "Johnson",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 4,
-      personalInfo: {
-        firstName: "Bekhruz",
-        lastName: "Tolmasov",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 5,
-      personalInfo: {
-        firstName: "Asadbek",
-        lastName: "Sindorov",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 6,
-      personalInfo: {
-        firstName: "Kim",
-        lastName: "Li",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 7,
-      personalInfo: {
-        firstName: "Abror",
-        lastName: "Sindorov",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 8,
-      personalInfo: {
-        firstName: "William",
-        lastName: "Sindorov",
-        dateOfBirth: "1990-01-01",
-        maritalStatus: "Single",
-        img: arthurImage,
-      },
-      workInfo: {
-        employmentType: "Full-time",
-        duty: "Software Development",
-        department: "NBD",
-        team: "Marketing",
-        jobTitle: "Software Engineer",
-        wages: "1000 USD",
-        joinedDate: "2015-06-15",
-        education: "Bachelor's Degree in Computer Science",
-      },
-      contactInfo: {
-        region: "Tashkent",
-        phoneNumber: "+998 00 000 00 00",
-        email: "bobur@example.com",
-      },
-      documents: {
-        document1: "resume.pdf",
-        document2: "coverletter.pdf",
-      },
-      reportInfo: {
-        supervisor: "John William",
-        firstApprover: "Jane Smith",
-        secondApprover: "Robert Brown",
-      },
-    },
-    {
-      id: 9,
-      personalInfo: {
-        firstName: "Nicola",
-        lastName: "Sindorov",
         dateOfBirth: "1990-01-01",
         maritalStatus: "Single",
         img: arthurImage,
@@ -468,8 +230,8 @@ function ManageUser() {
     <div className="manage-user-container">
       <h3 className="title">
         {Key((state) => state.isAdmin)
-          ? t("allemployees.manageuser")
-          : t("sidebar.all-employees")}
+          ? "Manage Users"
+          : "Users"}
       </h3>
       <div className="create-search-field">
         {Key((state) => state.isAdmin) ? (
@@ -489,17 +251,17 @@ function ManageUser() {
         </div>
       </div>
       <div className="display-information">
-        <ul className="information-title">
-          <li className="separate-bar">{t("allemployees.employeename")}</li>
-          <li className="separate-bar">{t("allemployees.department")}</li>
-          <li className="separate-bar">{t("allemployees.division")}</li>
-          <li className="locate-center">{t("allemployees.action")}</li>
-        </ul>
+        <div className="user-content-wrap">
+
+        
         {sortedData.map((employee) => (
-          <ul className="employee-content" key={employee.id}>
-            <li className="separate-bar">{employee.personalInfo.firstName}</li>
-            <li className="separate-bar">{employee.workInfo.department}</li>
-            <li className="separate-bar">{employee.workInfo.team}</li>
+          <ul className="user-content" key={employee.id}>
+            <li className="user-bar"><strong>User Name:</strong>{employee.personalInfo.firstName}</li>
+            <li className="user-bar"><strong>Department:</strong>{employee.workInfo.department}</li>
+            <li className="user-bar"><strong>Division:</strong>{employee.workInfo.team}</li>
+            <li className="user-bar"><strong>Current Availablity:</strong> Available</li>
+            <hr />
+            <li className="locate-center">{t("allemployees.action")}</li>
             <li>
               <Button
                 onView={() => handleViewInformation(employee)}
@@ -509,6 +271,7 @@ function ManageUser() {
             </li>
           </ul>
         ))}
+        </div>
       </div>
 
       <Modal
@@ -571,7 +334,7 @@ function ManageUser() {
             Back
           </button>
           <br />
-          <h2>Employee Information</h2>
+          <h2>User Information</h2>
           <hr className="horizontal-line"/>
           <div className="viewinformation-wrap">
             <div className="viewinformation-left">

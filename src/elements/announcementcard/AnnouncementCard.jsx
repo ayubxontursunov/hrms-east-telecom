@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import "./AnnouncementCard.css"
+import {Link} from 'react-router-dom'
 function AnnouncementCard({ date, title, desc, link}) {
   const [t] = useTranslation("global");
   return (
@@ -10,9 +11,9 @@ function AnnouncementCard({ date, title, desc, link}) {
       <span className="announcement-desc-wrap">
       <span className="announcement-desc">{desc}</span>
       </span>
-      <a href={link} className="announcement-link">
+      <Link to={link} className="announcement-link">
         <span>{t("dashboard.bottom.details")}</span>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -8,8 +8,6 @@ const Key = create(
       isAdmin: false,
       keepMeLogin: false,
       language: "en",
-      color: "rgb(0, 0, 255)",
-      setColor: (newColor) => set({ color: newColor }),
       setLanguage: (newState) => set({ language: newState }),
       setIsLogin: (newState) => set({ isLogin: newState }),
       setIsAdmin: (newState) => set({ isAdmin: newState }),

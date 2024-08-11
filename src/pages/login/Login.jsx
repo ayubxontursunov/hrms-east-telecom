@@ -39,14 +39,14 @@ function Login() {
       alert("Please, will in the required fields!");
     }
     else{
-      if(username==='whoami'&&password==='admin'){
-        alert("Welcome Admin!");
+      if(username==='admin'&&password==='A3x$7bP!9wZ@rQ#'){
+        // alert("Welcome Admin!");
         setIsAdmin(true);
         setIsLogin(true);
         navigate("/home/dashboard");
       }
-      else if(username==='whoami'&&password==='user'){
-        alert("Welcome User!");
+      else if(username==='user'&&password==='A3x$7bP!9wZ@rQ#'){
+        // alert("Welcome User!");
         setIsAdmin(false);
         setIsLogin(true);
         navigate("/home/dashboard");
@@ -56,6 +56,7 @@ function Login() {
       }
     }
   }
+
   return (
     <div className="login-container">
       <Logo />

@@ -51,3 +51,8 @@ button{
   --color-dark-orange:#FF9600;
   --color-light-orange:#FFF3DE;
 }
+.form-container{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}

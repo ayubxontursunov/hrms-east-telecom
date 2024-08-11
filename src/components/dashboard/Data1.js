@@ -9,7 +9,7 @@ const createData1 = (t) => ({
     title: t("dashboard.first-section.title1"),
     label: t("dashboard.first-section.label1"),
     img: im1,
-    link: "#1",
+    link: "/home/company",
   },
   Employees: {
     id:2,
@@ -23,14 +23,14 @@ const createData1 = (t) => ({
     title: t("dashboard.first-section.title3"),
     label: t("dashboard.first-section.label3"),
     img: im3,
-    link: "#3",
+    link: "/home/users",
   },
   Projects: {
     id:4,
     title: "Projects",
-    label: "4 Projects",
+    label: "4 projects",
     img: im4,
-    link: "#4",
+    link: "/home/projects",
   },
 });
 

@@ -12,6 +12,9 @@ function ManageDocuments() {
   const [documents, setDocuments] = useState([
     { id: 1, title: "Project Proposal", description: "Proposal for the new project", department: "R&D", startDate: "2024-08-15" },
     { id: 2, title: "Budget Report", description: "Quarterly budget report", department: "Finance", startDate: "2024-09-30" },
+    { id: 3, title: "Philosopher's Stone", description: "World of adventures", department: "Finance", startDate: "2024-09-30" },
+    { id: 4, title: "Amazon", description: "Wild nature", department: "Finance", startDate: "2024-09-30" },
+    { id: 5, title: "Independance", description: "Things included in the independece of Cultures", department: "Finance", startDate: "2024-09-30" },
   ]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -74,15 +77,13 @@ function ManageDocuments() {
         </div>
       </div>
       <div className="display-information">
-        <ul className="training-grid">
-          <li className="separate-bar">Title</li>
-          <li className="separate-bar">Description</li>
-          <li className="locate-center">Action</li>
-        </ul>
+        <div className="document-content-wrap">
         {filteredDocuments.map((document) => (
-          <ul className="training-content" key={document.id}>
-            <li className="separate-bar">{document.title}</li>
-            <li className="separate-bar">{document.description}</li>
+          <ul className="document-content" key={document.id}>
+            <li className="document-bar"><strong>Title:</strong>{document.title}</li>
+            <li className="document-bar"><strong>Description:</strong>{document.description}</li>
+            <hr className="horizontal-line-card"/>
+            <li className="locate-center">Action</li>
             <li>
               <Button
               onView={()=>handleView(document)}
@@ -91,6 +92,7 @@ function ManageDocuments() {
             </li>
           </ul>
         ))}
+        </div>
       </div>
 
       <Modal
