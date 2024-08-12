@@ -34,7 +34,7 @@ const ProfileComponent = () => {
             <div className="row">
               <div className="col">
                 <p>First Name</p>
-                <h4>Brooklyn</h4>
+                <h4>Lisa</h4>
               </div>
               <div className="col move-left">
                 <p>Last Name</p>
@@ -243,7 +243,7 @@ const ProfileComponent = () => {
       <div className="profile-header">
         <img src={Profile} alt="Profile" className="profile-image" />
         <div className='userinfo_prof'>
-          <h3 className='grid_item1'>Brooklyn Simmons</h3>
+          <h3 className='grid_item1'>Lisa Simmons</h3>
           <p className='grid_item2'>Project Manager</p>
           <p className='grid_item3'>lisa@gmail.com</p>
         </div>

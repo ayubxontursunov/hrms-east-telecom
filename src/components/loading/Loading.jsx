@@ -15,7 +15,7 @@ function Loading() {
           return prev;
         }
       });
-    }, 30); // 3000ms / 100 steps = 30ms per increment
+    }, 150); // 3000ms / 100 steps = 30ms per increment
 
     return () => clearInterval(interval); // Clear the interval when the component unmounts
   }, []);

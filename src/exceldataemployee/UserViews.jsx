@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './UserViews.css';
 import * as XLSX from 'xlsx';
 import EmployeeSkillsBarChart from '../components/employeeinformation/EmployeeSkillsBarChart';
-
+import Key from '../auth/Key';
 const UserViews = () => {
   const [data, setData] = useState(null);
 
@@ -29,7 +29,7 @@ const UserViews = () => {
         <div className="chart-container-vw">
           <EmployeeSkillsBarChart data={data || undefined} />
         </div>
-          <div className="upload-button-vw">
+          {Key((state)=>state.isAdmin)?<div className="upload-button-vw">
             <label htmlFor="file-upload" className="upload-button-view-vw">
               Upload Excel File
             </label>
@@ -40,7 +40,8 @@ const UserViews = () => {
               onChange={handleFileUpload}
               className="upload-input-vw"
             />
-          </div>
+          </div>:null}
+          
         </div>
         
       </div>

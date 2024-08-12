@@ -162,6 +162,14 @@ ul{
      grid-column: 2;
      grid-row: 4;
 }
+.user-view-item-11{
+     grid-column: 3;
+     grid-row: 4;
+}
+.user-view-item-12{
+     grid-column: 4;
+     grid-row: 4;
+}
 .viewinformation-left p{
      color: rgb(35, 59, 84);
 
@@ -176,10 +184,11 @@ ul{
      gap: 10px;
 }
 .user-content{
-     width: 25%;
+     width: 33%;
      display: grid;
      gap: 5px;
      border: 1px solid;
      border-radius: 7px;
      padding: 10px 5px;
+     justify-content: space-between;
 }

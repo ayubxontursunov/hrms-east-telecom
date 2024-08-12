@@ -2,7 +2,6 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell
 } from 'recharts';
 import PropTypes from 'prop-types';
-
 // Default data
 const DEFAULT_DATA = [
   { name: 'Adaptability', skillLevel: 75 },

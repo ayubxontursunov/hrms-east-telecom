@@ -12,8 +12,11 @@ import Form5 from "../addnewemployee/report/Report";
 import { CiSearch } from "react-icons/ci";
 import lilyImage from "../../../image/viewinfo2.jpg";
 import arthurImage from "../../../image/viewinfo1.jpg";
+import lisaImage from "../../../image/lisaImg.jpg";
 import UserViews from "../../../exceldataemployee/UserViews";
 function ManageUser() {
+  const mood = Key((state)=>state.mood);
+  const availability = Key((state)=>state.availability);
   const { t } = useTranslation("global");
   const [searchTerm, setSearchTerm] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -76,6 +79,40 @@ function ManageUser() {
         region: "Tashkent",
         phoneNumber: "+998 00 000 00 00",
         email: "bobur@example.com",
+      },
+      documents: {
+        document1: "resume.pdf",
+        document2: "coverletter.pdf",
+      },
+      reportInfo: {
+        supervisor: "John William",
+        firstApprover: "Jane Smith",
+        secondApprover: "Robert Brown",
+      },
+    },
+    {
+      id: 3,
+      personalInfo: {
+        firstName: "Lisa",
+        lastName: "Simmons",
+        dateOfBirth: "1995-07-14",
+        maritalStatus: "Single",
+        img: lisaImage,
+      },
+      workInfo: {
+        employmentType: "Full-time",
+        duty: "Project Manager",
+        department: "NBD",
+        team: "Marketing",
+        jobTitle: "Software Engineer",
+        wages: "1000 USD",
+        joinedDate: "2015-06-15",
+        education: "Bachelor's Degree in Computer Science",
+      },
+      contactInfo: {
+        region: "Tashkent",
+        phoneNumber: "+998 00 000 00 00",
+        email: "lisa@example.com",
       },
       documents: {
         document1: "resume.pdf",
@@ -259,7 +296,8 @@ function ManageUser() {
             <li className="user-bar"><strong>User Name:</strong>{employee.personalInfo.firstName}</li>
             <li className="user-bar"><strong>Department:</strong>{employee.workInfo.department}</li>
             <li className="user-bar"><strong>Division:</strong>{employee.workInfo.team}</li>
-            <li className="user-bar"><strong>Current Availablity:</strong> Available</li>
+            <li className="user-bar"><strong>Current Availablity:</strong> {availability}</li>
+            <li className="user-bar"><strong>Current Mood:</strong> {mood}</li>
             <hr />
             <li className="locate-center">{t("allemployees.action")}</li>
             <li>
@@ -380,6 +418,14 @@ function ManageUser() {
               <p className="user-view-item-10">
                 <strong>Supervisor:</strong>{" "}
                 {viewInformationData.reportInfo.supervisor}
+              </p>
+              <p className="user-view-item-11">
+                <strong>Availability:</strong>{" "}
+                {availability}
+              </p>
+              <p className="user-view-item-12">
+                <strong>Mood:</strong>{" "}
+                {mood}
               </p>
             </div>
             <br />

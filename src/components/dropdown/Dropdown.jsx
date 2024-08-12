@@ -1,50 +1,72 @@
-import React, { useState } from "react";
-import './Dropdown.css';
+import "./Dropdown.css";
 
-const AdvancedDropdown = ({ options, defaultText, description }) => {
-    const [selectedOption, setSelectedOption] = useState("");
+import Key from "../../auth/Key";
+import { useState } from "react";
+function Dropdown() {
+  const [selectedOption1, setSelectedOption1] = useState("");
+  const [selectedOption2, setSelectedOption2] = useState("");
+  const setMood = Key((state) => state.setMood);
+  const handleSelectedOption1 = (e) => {
+    setSelectedOption1(e.target.value);
+    setMood(e.target.value);
+  };
+  const setAvailability = Key((state) => state.setAvailability);
+  const handleSelectedOption2 = (e) => {
+    setSelectedOption2(e.target.value);
+    setAvailability(e.target.value);
+  };
+  return (
+    <div className="dropdown-wrap">
+      <div className="wrapper-dropdown">
+        <h4 className="setting-description-text">Current Status</h4>
+        <select
+          value={selectedOption1}
+          onChange={handleSelectedOption1}
+          className="dropdown-select"
+        >
+          <option value="" disabled>
+            Select your mood
+          </option>
+          <option value="🙂 Good">🙂 Good</option>
+          <option value="😐 Neutral">😐 Neutral</option>
+          <option value="😪 Stressed">😪 Stressed</option>
+          <option value="😡 Angry">😡 Angry</option>
+        </select>
+      </div>
+      <div className="wrapper-dropdown">
+        <h4 className="setting-description-text">Current Availability</h4>
+        <select
+          value={selectedOption2}
+          onChange={handleSelectedOption2}
+          className="dropdown-select"
+        >
+          <option value="" disabled>
+            Select your availablity
+          </option>
+          <option value="🟢 Available">🟢 Available</option>
+          <option value="📅 In a Meeting">📅 In a Meeting</option>
+          <option value="🏝️ Out of Office">🏝️ Out of Office</option>
+          <option value="🚫 Do Not Disturb">🚫 Do Not Disturb</option>
+        </select>
+      </div>
+    </div>
+  );
+}
+export default Dropdown;
 
-    return (
-        <div className="dropdown-wrap">
-            <div className="setting-description">
-                <div className="setting-description-text">
-                    <h10>{description}</h10>
-                </div>
-            </div>
-            <div className="wrapper-dropdown">
-                <select
-                    value={selectedOption}
-                    onChange={(e) => setSelectedOption(e.target.value)}
-                    className="dropdown-select"
-                >
-                    <option value="" disabled>{defaultText}</option>
-                    {options.map((option, index) => (
-                        <option key={index} value={option}>
-                            {option}
-                        </option>
-                    ))}
-                </select>
-            </div>
-        </div>
-    );
-};
-
-const App = () => {
-    return (
-        <div className="dropdown-container">
-            <AdvancedDropdown
-                options={["🙂 Good", "😐 Neutral", "😪 Stressed", "😡 Angry"]}
-                defaultText="Select your current mood"
-                description="Emotional State"
-            />
-            <AdvancedDropdown
-                options={["🟢 Available", "📅 In a Meeting", "🏝️ Out of Office", "🚫 Do Not Disturb"]}
-                defaultText="Select your availability"
-                description="Current Status"
-            />
-        </div>
-
-    );
-};
-
-export default App;
+// function Dropdown(){
+//     return (
+//         <div className="dropdown-container">
+//             <AdvancedDropdown
+//                 options={["🙂 Good", "😐 Neutral", "😪 Stressed", "😡 Angry"]}
+//                 defaultText="Select your current mood"
+//                 description="Emotional State"
+//             />
+//             <AdvancedDropdown
+//                 options={["🟢 Available", "📅 In a Meeting", "🏝️ Out of Office", "🚫 Do Not Disturb"]}
+//                 defaultText="Select your availability"
+//                 description="Current Status"
+//             />
+//         </div>
+//     );
+// };
