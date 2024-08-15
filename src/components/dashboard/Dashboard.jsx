@@ -21,7 +21,7 @@ function Dashboard() {
           const item = data1[key];
           return (
             <ItemCard 
-              color={item.id==1?"#434242":item.id==2?"#E31E24":item.id==3?"#233B54":"#55AB7A"}
+              color={item.id==1?"#2F4F4F":item.id==2?"#FF7F50":item.id==3?"#4682B4":"#3CB371"}
               key={key}
               title={item.title}
               label={item.label}
@@ -30,10 +30,6 @@ function Dashboard() {
             />
           );
         })}
-      </div>
-      <div className="graph-container">
-        <div className="graph-div"><DoughnutChart/></div>
-        <div className="graph-div"><SatisfactionLineChart/></div>
       </div>
       <div className="middle-container">
         <div className="middle-right">
@@ -81,6 +77,10 @@ function Dashboard() {
           <CalendarComponent />
         </div>
       </div>
+      <div className="graph-container">
+        <div className="graph-div"><DoughnutChart/></div>
+        <div className="graph-div"><SatisfactionLineChart/></div>
+      </div>
       <div className="middle-container">
         <div className="announcement-page">
           <span className="announcement-wrap">
@@ -88,7 +88,7 @@ function Dashboard() {
               {t("sidebar.announcement")}
             </span>
             <a href="#notsetyet" className="announcement-wrap-link">
-              {t("dashboard.first-section.link")}
+            {t("button.view")}
             </a>
             <IoIosArrowForward className="announcement-wrap-icon" />
           </span>
@@ -108,7 +108,7 @@ function Dashboard() {
               {t("sidebar.training")}
             </span>
             <a href="#notsetyet" className="announcement-wrap-link">
-              {t("dashboard.first-section.link")}
+              {t("button.view")}
             </a>
             <IoIosArrowForward className="announcement-wrap-icon" />
           </span>

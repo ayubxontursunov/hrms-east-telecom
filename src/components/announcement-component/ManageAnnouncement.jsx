@@ -66,7 +66,7 @@ function ManageAnnouncement() {
 
   return (
     <div className="manage-announcement-container">
-      <h3 className="title">Announcement</h3>
+      <h3 className="title">{t("announcement.announcement")}</h3>
       <div className="create-search-field">
         {Key((state)=>state.isAdmin)?        <button onClick={() => openModal()} className="search-field-button">
           {t("button.create")}
@@ -74,7 +74,7 @@ function ManageAnnouncement() {
         <div className="all-comp-search-wrap">
         <input
           type="text"
-          placeholder={t("search")}
+          placeholder={t("button.search")}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-field"
@@ -84,9 +84,9 @@ function ManageAnnouncement() {
       </div>
       <div className="display-information">
         <ul className="announcement-grid">
-          <li className="separate-bar">{t("announcement.announcement-title-show")}</li>
-          <li className="separate-bar">{t("announcement.announcement-description-show")}</li>
-          <li className="locate-center">{t("announcement.action")}</li>
+          <li className="separate-bar">{t("announcement.title")}</li>
+          <li className="separate-bar">{t("announcement.description")}</li>
+          <li className="locate-center">{t("button.action")}</li>
         </ul>
         {filteredAnnouncements.map((announcement) => (
           <ul className="announcement-content" key={announcement.id}>
@@ -109,49 +109,49 @@ function ManageAnnouncement() {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
-          <h2 className="modal-title">{!formData.id?"Create a New Announcement":"Edit an Announcement"}</h2>
+          <h2 className="modal-title">{!formData.id?t("announcement.create"):t("announcement.edit")}</h2>
         <div className="form-container">
-          <label className="form-label">Title</label>
-          <input placeholder="Title" className="form-input"
+          <label className="form-label">{t("announcement.title")}</label>
+          <input placeholder={t("announcement.title")} className="form-input"
             type="text"
             value={formData.titleName}
             onChange={(e) => setFormData({ ...formData, titleName: e.target.value })}
           />
-          <label className="form-label">Description</label>
-          <input placeholder="Description" className="form-input"
+          <label className="form-label">{t("announcement.description")}</label>
+          <input placeholder={t("announcement.description")} className="form-input"
             type="text"
             value={formData.descName}
             onChange={(e) => setFormData({ ...formData, descName: e.target.value })}
           />
-          <label className="form-label">Expire Date</label>
+          <label className="form-label">{t("announcement.expire")}</label>
           <input className="form-input"
             type="date"
             value={formData.expireDate}
             onChange={(e) => setFormData({ ...formData, expireDate: e.target.value })}
           />
-          <button className="form-button" onClick={handleSave}>Save</button>
+          <button className="form-button" onClick={handleSave}>{t("button.save")}</button>
           </div>
       </Modal>
       {closediv ? (
         <div className="comp-div-for-display-information-for-all">
           <br />
-          <strong>Announcement Information</strong>
+          <strong>{t("announcement.information")}</strong>
           <br />
           <hr />
           <br />
           <p>
-            <strong>Title:</strong>
+            <strong>{t("announcement.title")}:</strong>
             {Information.titleName}
           </p>
           <p>
-            <strong>Description:</strong>
+            <strong>{t("announcement.description")}:</strong>
             {Information.descName}
           </p>
           <button
             onClick={handleCloseView}
             className="comp-div-for-display-button"
           >
-            Back
+            {t("button.back")}
           </button>
         </div>
       ) : (

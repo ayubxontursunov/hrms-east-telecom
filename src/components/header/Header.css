@@ -1,5 +1,5 @@
 .header {
-     background-color: #E0E0E0;
+     background-color: #2C3E50;
      position: fixed;
      width: 80%;
      top: 0;
@@ -27,12 +27,12 @@ select {
 
 .header-icon-profile {
      font-size: 22px;
-     color: #1E88E5;
+     color: #ECF0F1;
      cursor: pointer;
 }
 
 .header-icon-notification {
-     color: #424242;
+     color: #ECF0F1;
      cursor: pointer;
      font-size: 20px;
 }
@@ -41,15 +41,15 @@ select {
      position: relative;
      display: flex;
      align-items: center;
-     color: #0E0D0D;
+     color: #ECF0F1;
 }
 
 .custom-select {
      display: block;
      width: 100%;
      font-size: 16px;
-     color: #333;
-     background-color: #E0E0E0;
+     color: #ECF0F1;
+     background-color: #2C3E50;
      border: unset;
      appearance: none;
      -webkit-appearance: none;
@@ -67,11 +67,11 @@ select {
 }
 .profile-icon-wrap-container-ul{
      width: 100px;
-     background-color: #E0E0E0;
-     color: #333;
+     background-color: #2C3E50;
+     color: #ECF0F1;
      position: absolute;
      left: -70px;
-     top: 36px;
+     top: 38px;
      display: flex;
      flex-direction: column;
      border-radius: 7px;
@@ -85,7 +85,7 @@ select {
 }
 
 .profile-icon-wrap-container-item:hover{
-     color: white;
+     color: #ECF0F1;
      background-color: blue;
 }
 .close-wrap-ul{
@@ -99,4 +99,7 @@ select {
      width: 30px;
      border-radius: 30%;
      cursor: pointer;
+}
+.logo-title{
+     color: #ECF0F1;
 }

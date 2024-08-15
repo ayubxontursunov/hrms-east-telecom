@@ -13,9 +13,10 @@ import Profile from '../components/profile/Profile';
 import NotificationComponent from '../components/notification-component/NotificationComponent';
 import ClickLogo from '../components/clicklogocomp/ClickLogo';
 import Company from '../components/dashboard-component/company/Company';
-import Users from '../components/users-component/manageuser/ManageUser'
+import ManageUser from '../components/users-component/ManageUser';
 import ProjectBarChart from '../components/project-component/Projects';
 import LinkDirect from '../components/link-direct/LinkDirect';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -80,7 +81,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'users',
-        element: <Users />,
+        element: <ManageUser />,
       },
       {
         path: 'projects',

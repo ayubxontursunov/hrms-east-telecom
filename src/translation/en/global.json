@@ -1,72 +1,222 @@
 {
-     "sidebar":{
-          "dashboard":"Dashboard",
-          "all-employees":"All employees",
-          "announcement":"Announcement",
-          "training":"Training",
+     "sidebar": {
+       "dashboard": "Dashboard",
+       "all-employees": "All Employees",
+       "announcement": "Announcement",
+       "training": "Training",
+       "documents": "Documents",
+       "leaves": "Leaves"
+     },
+     "navbar": {
+        "profile":{
+          "profile": "Profile",
+          "log-out": "Log Out"
+        },
+        "languages":{
+          "en":"English",
+          "uz":"Uzbek",
+          "ru":"Russian",
+          "ko":"Korean"
+        }
+      },
+      "notification":{
+        "label": "Notification Alert",
+        "content":"Now, you do not have a new alert !"
+      },
+      "profile":{
+        "status":{
+          "current-status":"Current Status",
+          "current-availability":"Current Availability",
+          "select-mood":"Select your mood",
+          "select-availability":"Select your availability",
+          "good":"🙂 Good",
+          "neutral":"😐 Neutral",
+          "stressed":"😪 Stressed",
+          "angry":"😡 Angry",
+          "available":"🟢 Available",
+          "meeting":"📅 In a Meeting",
+          "office":"🏝️ Out of Office",
+          "disturb":"🚫 Do Not Disturb"
+        },
+        "heading":{
+          "personal":"Personal Information",
+          "professional":"Professional Information",
           "documents":"Documents",
-          "leaves":"Leaves",
-          "log-out":"Log out"
-     },
-     "dashboard":{
-          "first-section":{
-               "title1":"Company",
-               "label1":"8 departments",
-               "link":"view",
-               "title2":"Employees",
-               "label2":"750 employees",
-               "title3":"Users",
-               "label3":"400 users",
-               "title4":"Training",
-               "label4":"7 training"
-          },
-          "middle":{
-               "type-casual":"Casual leave",
-               "type-late-entry":"Late entry",
-               "type-maternity":"Maternity leave",
-               "type-sick":"Sick leave",
-               "status-pending":"Pending",
-               "status-rejected":"Rejected",
-               "status-approved":"Approved",
-               "calendar":"Calendar",
-               "approval":"Approval",
-               "date":"DATE",
-               "type":"APPLICATION TYPE",
-               "duration":"DURATION",
-               "status":"STATUS"
-          },
-          "bottom":{
-               "title1":"Annual Retreat",
-               "title2":"Google technologies",
-               "title3":"Zoom technologies",
-               "date1":"25 June",
-               "date2":"26 June",
-               "date3":"27 June",
-               "desc1":"Fake Data-Annual Retreat-Annual Retreat is a way to gain strength and refresh",
-               "desc2":"Fake Data-Google is providing new technologies to teach employees about the methods of improving efficiency",
-               "desc3":"Fake Data-Zoom is providing new technologies to teach employees about the methods of improving efficiency",
-               "details":"Details"
-          }
-     },
-     "allemployees":{
-          "manageuser":"Manage User",
-          "employeename":"Employee Name",
+          "account":"Account Access"
+        },
+        "personal":{
+          "first-name":"First Name",
+          "last-name":"Last Name",
+          "date-of-birth":"Date of Birth",
+          "marital-status":"Marital Status",
+          "job-title":"Job Title",
+          "duty":"Duty",
+          "joined-date":"Joined Date",
           "department":"Department",
+          "team":"Team",
+          "job-type":"Job Type",
+          "wages":"Wages",
           "division":"Division",
-          "action":"Action"
+          "email-address":"Email Address",
+          "nationality":"Nationality",
+          "image":"Image",
+          "education":"Education",
+          "address":"Address",
+          "phone-number":"Phone Number",
+          "license":"License document",
+          "cv-doc":"CV document",
+          "supervisor":"Supervisor",
+          "first-level-approver":"First Level Approver",
+          "second-level-approver":"Second Level Approver",
+          "performance-skills":"Performance and Skills",
+          "upload-excel":"Upload Excel File"
+        }
+
+      },
+     "dashboard": {
+       "cards": {
+         "company": "Company",
+         "departments": "8 Departments",
+         "employees": "Employees",
+         "number-of-employees": "750 Employees",
+         "users": "Users",
+         "number-of-users": "400 Users",
+         "projects": "Projects",
+         "number-of-projects": "4 Projects",
+         "view":"View"
+       },
+       "graphs": {
+         "percentage-of-employees-by-department": "Percentage of Employees by Department",
+         "sales": "Sales",
+         "marketing": "Marketing",
+         "engineering": "Engineering",
+         "hr": "HR",
+         "finance": "Finance",
+         "operations": "Operations",
+         "it": "IT",
+         "legal": "Legal",
+         "employee-satisfaction-trend": "Employee Satisfaction Trend",
+         "satisfied": "Satisfied",
+         "neutral": "Neutral",
+         "unsatisfied": "Unsatisfied",
+         "number-of-employees": "Number of Employees",
+         "january": "January",
+         "february": "February",
+         "march": "March",
+         "april": "April",
+         "may": "May",
+         "june": "June",
+         "july": "July",
+         "august": "August",
+         "september": "September",
+         "october": "October",
+         "november": "November",
+         "december": "December",
+         "month": "Month"
+       },
+       "middle": {
+         "type-casual": "Casual Leave",
+         "type-late-entry": "Late Entries",
+         "type-maternity": "Maternity Leave",
+         "type-sick": "Sick Leave",
+         "status-pending": "Pending",
+         "status-rejected": "Rejected",
+         "status-approved": "Approved",
+         "calendar": "Calendar",
+         "approval": "Approval",
+         "date": "DATE",
+         "type": "TYPES OF REQUESTS",
+         "duration": "DURATION",
+         "status": "STATUS"
+       },
+       "bottom": {
+         "title1": "Annual Retreat",
+         "title2": "Google Technologies",
+         "title3": "Zoom Technologies",
+         "date1": "June 25",
+         "date2": "June 26",
+         "date3": "June 27",
+         "desc1": "Sample Data - Annual Retreat - A way to recharge and refresh",
+         "desc2": "Sample Data - Google provides new technologies to train employees on improving efficiency",
+         "desc3": "Sample Data - Zoom provides new technologies to train employees on improving efficiency",
+         "details": "Details"
+       }
      },
-     "button":{
-          "edit":"Edit",
-          "create":"Create",
-          "save":"Save",
-          "delete":"Delete",
-          "view":"View"
+     "all-employees": {
+       "all-employees":"All Employees",
+       "employee-name": "Employee Name",
+       "employee-information": "Employee Information",
+       "department": "Department",
+       "division": "Division",
+       "add-new-employee": "Add a New Employee",
+       "edit-employee-information": "Edit Employee Information"     
+      },
+      "button": {
+        "back":"Back",
+        "action":"Action",
+        "edit": "Edit",
+        "search":"Search",
+        "create": "Create",
+        "save": "Save",
+        "delete": "Delete",
+        "view": "View",
+        "next":"Next",
+        "previous":"Previous"
      },
-     "announcement":{
-          "announcement-title":"Announcement",
-          "announcement-admin-title":"Manage Announcement",
-          "announcement-title-show":"Title",
-          "announcement-description-show":"Description",
-          "action":"Action"
-     }
-}
+     "announcement": {
+       "announcement": "Announcement",
+       "create": "Create a New Announcement",
+       "edit": "Edit an Announcement",
+       "title": "Title",
+       "description": "Description",
+       "expire": "Expiration Date",
+       "information":"Announcement Information"
+     },
+     "training": {
+       "training": "Training",
+       "create": "Create a New Training",
+       "edit": "Edit Training Information",
+       "title": "Title",
+       "description": "Description",
+       "department": "Department",
+       "information": "Training Information",
+       "start": "Start Date"
+     },
+     "documents": {
+       "documents": "Documents",
+       "title": "Title",
+       "description": "Description",
+       "read": "Read",
+       "create": "Create New Document",
+       "information": "Document Information",
+       "upload": "Upload File",
+       "back": "Back"
+     },
+     "leaves":{
+      "leaves":"Leaves",
+      "date":"Date of Application",
+      "type":"Application Type",
+      "duration":"Duration",
+      "status":"Status",
+      "create":"Create a New Leave Application",
+      "edit":"Edit a Leave Application",
+      "name":"Employee Name",
+      "pending":"Pending",
+      "approved":"Approved",
+      "information":"Leave Information",
+      "rejected":"Rejected"
+     },
+     "hrms":{
+      "title":"ABOUT HUMAN RESOURCES MANAGEMENT SYSTEM",
+      "text":"Human Resource Management Systems (HRMS) are integrated software solutions designed to streamline and manage various HR functions within an organization. HRMS typically encompasses a range of features including employee information management, recruitment, onboarding, payroll, performance evaluations, and benefits administration. These systems centralize employee data, automate administrative tasks, and facilitate compliance with labor laws."
+    },
+
+
+    "users":{
+      "add-user":"Add a New User",
+      "role":"User Role",
+      "user-information":"User Information",
+      "edit-user":"Edit User Information"
+    }
+   }
+   

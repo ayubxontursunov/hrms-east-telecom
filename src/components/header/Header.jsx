@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 function Header() {
   const setLanguage = Key((state)=>state.setLanguage);
   const { i18n } = useTranslation("global");
+  const {t} = useTranslation("global");
   const handleLanguageChange = (event) => {
     i18n.changeLanguage(event.target.value);
     setLanguage(event.target.value);
@@ -23,6 +24,8 @@ function Header() {
     setIsAdmin(false);
     navigate("/login");
   };
+
+
   const [closediv, setClosediv]=useState(false);
   // const []
   const handleopenProfile = ()=>{
@@ -42,18 +45,18 @@ function Header() {
         <form className="custom-select-wrapper">
           <GrLanguage className="icon-language"/>
           <select id="languages" name="languages" className="custom-select" onChange={handleLanguageChange} value={i18n.language}>
-            <option value="en">English</option>
-            <option value="uz">Oʻzbekcha</option>
-            <option value="ru">Русский</option>
-            <option value="ko">한국어</option>
+            <option value="en">{t("navbar.languages.en")}</option>
+            <option value="uz">{t("navbar.languages.uz")}</option>
+            <option value="ru">{t("navbar.languages.ru")}</option>
+            <option value="ko">{t("navbar.languages.ko")}</option>
           </select>
         </form>
         <IoMdNotificationsOutline onClick={handleNotification} className="header-icon-notification"/>
         <div className="profile-icon-wrap-container">
         <img onClick={handleProfileClick} src={profileImg} className="profile-img-header" alt="profile-img" />
           <ul className={`profile-icon-wrap-container-ul ${!closediv?"close-wrap-ul":"open-wrap-ul"}`}>
-            <li onClick={handleopenProfile} className="profile-icon-wrap-container-item">Profile</li>
-            <li onClick={handleLeave} className="profile-icon-wrap-container-item">Log Out</li>
+            <li onClick={handleopenProfile} className="profile-icon-wrap-container-item">{t("navbar.profile.profile")}</li>
+            <li onClick={handleLeave} className="profile-icon-wrap-container-item">{t("navbar.profile.log-out")}</li>
           </ul>
         </div>
 

@@ -1,0 +1,44 @@
+.skills-table-vw {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+}
+
+.skills-table-vw th,
+.skills-table-vw td {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+
+.skills-table-vw th {
+     background-color: #f2f2f2;
+     text-align: left;
+}
+
+.upload-button-vw {
+     margin-top: 30px;
+     /* margin-bottom: 10px; */
+}
+
+.upload-input-vw {
+     display: none;
+}
+
+
+
+.upload-button-view-vw {
+     box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.3);
+     background: linear-gradient(to top, #851C1F, #E74C3C);
+     cursor: pointer;
+     color: #ECF0F1; /* Text color for better readability */
+     border: none; /* Removes default border */
+     padding: 8px 18px; /* Adds padding for a more comfortable click area */
+     border-radius: 5px; /* Adds a slight roundness to the button edges */
+     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition effects */
+   }
+   
+.upload-button-view-vw:hover {
+     transform: translateY(-2px); /* Slightly lifts the button on hover */
+     box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+   }
+   

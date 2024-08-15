@@ -1,6 +1,6 @@
 .training-grid{
      display: grid;
-     grid-template-columns: 25% 50% 25%;
+     grid-template-columns: 25% 40% 35%;
      justify-content: space-between;
      align-items: center;     
      color: #0E0D0D;
@@ -10,7 +10,7 @@
 
 .training-content{
      display: grid;
-     grid-template-columns: 25% 50% 25%;
+     grid-template-columns: 25% 40% 35%;
      justify-content: space-between;
      border: 1px solid #979393;
      border-radius: 7px;

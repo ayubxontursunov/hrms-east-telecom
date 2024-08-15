@@ -2,33 +2,127 @@
   "sidebar": {
     "dashboard": "대시보드",
     "all-employees": "모든 직원",
-    "announcement": "공지",
-    "training": "훈련",
+    "announcement": "공지사항",
+    "training": "교육",
     "documents": "문서",
-    "leaves": "휴가",
-    "log-out": "로그 아웃"
+    "leaves": "휴가"
   },
+  "navbar": {
+     "profile":{
+       "profile": "프로필",
+       "log-out": "로그아웃"
+     },
+     "languages":{
+       "en":"영어",
+       "uz":"우즈베크어",
+       "ru":"러시아어",
+       "ko":"한국어"
+     }
+   },
+   "notification":{
+     "label": "알림 경고",
+     "content":"현재 새로운 경고가 없습니다!"
+   },
+   "profile":{
+     "status":{
+       "current-status":"현재 상태",
+       "current-availability":"현재 가능 여부",
+       "select-mood":"기분 선택",
+       "select-availability":"가능 여부 선택",
+       "good":"🙂 좋음",
+       "neutral":"😐 중립",
+       "stressed":"😪 스트레스",
+       "angry":"😡 화남",
+       "available":"🟢 사용 가능",
+       "meeting":"📅 회의 중",
+       "office":"🏝️ 사무실 밖",
+       "disturb":"🚫 방해 금지"
+     },
+     "heading":{
+       "personal":"개인 정보",
+       "professional":"전문 정보",
+       "documents":"문서",
+       "account":"계정 접근"
+     },
+     "personal":{
+       "first-name":"이름",
+       "last-name":"성",
+       "date-of-birth":"생년월일",
+       "marital-status":"결혼 여부",
+       "job-title":"직함",
+       "duty":"직무",
+       "joined-date":"가입 날짜",
+       "department":"부서",
+       "team":"팀",
+       "job-type":"직종",
+       "wages":"임금",
+       "division":"부문",
+       "email-address":"이메일 주소",
+       "nationality":"국적",
+       "image":"이미지",
+       "education":"교육",
+       "address":"주소",
+       "phone-number":"전화번호",
+       "license":"면허 문서",
+       "cv-doc":"이력서 문서",
+       "supervisor":"상사",
+       "first-level-approver":"1차 승인자",
+       "second-level-approver":"2차 승인자",
+       "performance-skills":"성과와 기술",
+       "upload-excel":"엑셀 파일 업로드"
+     }
+
+   },
   "dashboard": {
-    "first-section": {
-      "title1": "회사",
-      "label1": "8 부서",
-      "link": "보기",
-      "title2": "직원",
-      "label2": "750 직원",
-      "title3": "사용자",
-      "label3": "400 사용자",
-      "title4": "훈련",
-      "label4": "7 훈련"
+    "cards": {
+      "company": "회사",
+      "departments": "8개 부서",
+      "employees": "직원",
+      "number-of-employees": "750명 직원",
+      "users": "사용자",
+      "number-of-users": "400명 사용자",
+      "projects": "프로젝트",
+      "number-of-projects": "4개 프로젝트",
+      "view":"보기"
+    },
+    "graphs": {
+      "percentage-of-employees-by-department": "부서별 직원 비율",
+      "sales": "영업",
+      "marketing": "마케팅",
+      "engineering": "엔지니어링",
+      "hr": "인사",
+      "finance": "재무",
+      "operations": "운영",
+      "it": "IT",
+      "legal": "법무",
+      "employee-satisfaction-trend": "직원 만족도 추이",
+      "satisfied": "만족",
+      "neutral": "중립",
+      "unsatisfied": "불만족",
+      "number-of-employees": "직원 수",
+      "january": "1월",
+      "february": "2월",
+      "march": "3월",
+      "april": "4월",
+      "may": "5월",
+      "june": "6월",
+      "july": "7월",
+      "august": "8월",
+      "september": "9월",
+      "october": "10월",
+      "november": "11월",
+      "december": "12월",
+      "month": "월"
     },
     "middle": {
-      "type-casual": "연차",
-      "type-late-entry": "지각",
+      "type-casual": "캐주얼 휴가",
+      "type-late-entry": "늦은 출근",
       "type-maternity": "출산 휴가",
       "type-sick": "병가",
       "status-pending": "대기 중",
-      "status-rejected": "거부됨",
+      "status-rejected": "거절됨",
       "status-approved": "승인됨",
-      "calendar": "일정",
+      "calendar": "달력",
       "approval": "승인",
       "date": "날짜",
       "type": "신청 유형",
@@ -36,37 +130,90 @@
       "status": "상태"
     },
     "bottom": {
-      "title1": "연례 후퇴",
-      "title2": "Google 기술",
-      "title3": "Zoom 기술",
+      "title1": "연례 리트릿",
+      "title2": "구글 기술",
+      "title3": "줌 기술",
       "date1": "6월 25일",
       "date2": "6월 26일",
       "date3": "6월 27일",
-      "desc1": "가짜 데이터 - 연례 후퇴 - 연례 후퇴는 힘을 얻고 새롭게 하는 방법입니다.",
-      "desc2": "가짜 데이터 - Google은 직원들에게 효율성을 높이는 방법을 가르치기 위해 새로운 기술을 제공합니다.",
-      "desc3": "가짜 데이터 - Zoom은 직원들에게 효율성을 높이는 방법을 가르치기 위해 새로운 기술을 제공합니다.",
-      "details": "세부 사항"
+      "desc1": "샘플 데이터 - 연례 리트릿 - 재충전하고 새롭게 시작하는 방법",
+      "desc2": "샘플 데이터 - 구글은 효율성 향상을 위해 직원들을 훈련시키는 새로운 기술을 제공합니다",
+      "desc3": "샘플 데이터 - 줌은 효율성 향상을 위해 직원들을 훈련시키는 새로운 기술을 제공합니다",
+      "details": "세부 정보"
     }
   },
-  "allemployees": {
-    "manageuser": "사용자 관리",
-    "employeename": "직원 이름",
+  "all-employees": {
+    "all-employees":"모든 직원",
+    "employee-name": "직원 이름",
+    "employee-information": "직원 정보",
     "department": "부서",
     "division": "부문",
-    "action": "조치"
-  },
-  "button": {
-    "edit": "편집",
-    "create": "생성",
-    "save": "저장",
-    "delete": "삭제",
-    "view": "보기"
+    "add-new-employee": "새 직원 추가",
+    "edit-employee-information": "직원 정보 수정"     
+   },
+   "button": {
+     "back":"뒤로",
+     "action":"동작",
+     "edit": "편집",
+     "search":"검색",
+     "create": "생성",
+     "save": "저장",
+     "delete": "삭제",
+     "view": "보기",
+     "next":"다음",
+     "previous":"이전"
   },
   "announcement": {
-    "announcement-title": "공지",
-    "announcement-admin-title": "공지 관리",
-    "announcement-title-show": "제목",
-    "announcement-description-show": "설명",
-    "action": "행동"
-  }
+    "announcement": "공지사항",
+    "create": "새 공지사항 생성",
+    "edit": "공지사항 수정",
+    "title": "제목",
+    "description": "설명",
+    "expire": "만료일",
+    "information":"공지사항 정보"
+  },
+  "training": {
+    "training": "교육",
+    "create": "새 교육 생성",
+    "edit": "교육 정보 수정",
+    "title": "제목",
+    "description": "설명",
+    "department": "부서",
+    "information": "교육 정보",
+    "start": "시작일"
+  },
+  "documents": {
+    "documents": "문서",
+    "title": "제목",
+    "description": "설명",
+    "read": "읽기",
+    "create": "새 문서 생성",
+    "information": "문서 정보",
+    "upload": "파일 업로드",
+    "back": "뒤로"
+  },
+  "leaves":{
+   "leaves":"휴가",
+   "date":"신청 날짜",
+   "type":"신청 유형",
+   "duration":"기간",
+   "status":"상태",
+   "create":"새 휴가 신청 생성",
+   "edit":"휴가 신청 수정",
+   "name":"직원 이름",
+   "pending":"대기 중",
+   "approved":"승인됨",
+   "information":"휴가 정보",
+   "rejected":"거절됨"
+  },
+  "hrms":{
+   "title":"인적 자원 관리 시스템에 대하여",
+   "text":"인적 자원 관리 시스템(HRMS)은 조직 내 다양한 인사 기능을 간소화하고 관리하도록 설계된 통합 소프트웨어 솔루션입니다. HRMS는 일반적으로 직원 정보 관리, 채용, 온보딩, 급여, 성과 평가 및 복리 후생 관리 기능을 포함합니다. 이 시스템은 직원 데이터를 중앙화하고, 관리 작업을 자동화하며, 노동법 준수를 용이하게 합니다."
+ },
+"users": {
+  "add-user": "새 사용자 추가",
+  "role": "사용자 역할",
+  "user-information": "사용자 정보",
+  "edit-user": "사용자 정보 수정"
+}
 }

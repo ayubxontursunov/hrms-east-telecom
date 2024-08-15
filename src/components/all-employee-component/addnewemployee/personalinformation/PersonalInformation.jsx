@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import './PersonalInformation.css';
+import { useTranslation } from 'react-i18next';
 const PersonalInformation = ({ next, formData, setFormData}) => {
+  const {t} = useTranslation("global");
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -27,45 +29,45 @@ const PersonalInformation = ({ next, formData, setFormData}) => {
   return (
     <div className='add-employee-container'>
       <form className='personal-information-form' onSubmit={handleFormSubmit}>
-        <label className="form-label">First Name</label>
+        <label className="form-label">{t("profile.personal.first-name")}</label>
         <input
           className='form-input'
           type='text'
-          placeholder='First Name'
+          placeholder={t("profile.personal.first-name")}
           name='firstName'
           value={formData.personalInfo.firstName}
           onChange={handleInputChange}
         />
-        <label className="form-label">Last Name</label>
+        <label className="form-label">{t("profile.personal.last-name")}</label>
         <input
           className='form-input'
           type='text'
-          placeholder='Last Name'
+          placeholder={t("profile.personal.last-name")}
           name='lastName'
           value={formData.personalInfo.lastName}
           onChange={handleInputChange}
         />
-        <label className="form-label">Date of Birth</label>
+        <label className="form-label">{t("profile.personal.date-of-birth")}</label>
         <input
           className='form-input'
           type='date'
-          placeholder='Date of Birth'
+          placeholder={t("profile.personal.date-of-birth")}
           name='dateOfBirth'
           value={formData.personalInfo.dateOfBirth}
           onChange={handleInputChange}
         />
-        <label className="form-label">Marital Status</label>
+        <label className="form-label">{t("profile.personal.marital-status")}</label>
         <input
           className='form-input'
           type='text'
-          placeholder='Marital status'
+          placeholder={t("profile.personal.marital-status")}
           name='maritalStatus'
           value={formData.personalInfo.maritalStatus}
           onChange={handleInputChange}
         />
 
         <button className='form-button' type='submit'>
-          Next
+        {t("button.next")}
         </button>
       </form>
     </div>

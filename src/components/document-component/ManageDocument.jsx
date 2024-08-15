@@ -59,7 +59,7 @@ function ManageDocuments() {
 
   return (
     <div className="manage-documents-container">
-      <h3 className="title">{t("sidebar.documents")}</h3>
+      <h3 className="title">{t("documents.documents")}</h3>
       <div className="create-search-field">
     
         {Key((state)=>state.isAdmin)?<button onClick={openModal} className="search-field-button">
@@ -68,7 +68,7 @@ function ManageDocuments() {
         <div className="all-comp-search-wrap">
         <input
           type="text"
-          placeholder={t("search")}
+          placeholder={t("button.search")}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-field"
@@ -80,10 +80,10 @@ function ManageDocuments() {
         <div className="document-content-wrap">
         {filteredDocuments.map((document) => (
           <ul className="document-content" key={document.id}>
-            <li className="document-bar"><strong>Title:</strong>{document.title}</li>
-            <li className="document-bar"><strong>Description:</strong>{document.description}</li>
+            <li className="document-bar"><strong>{t("documents.title")}:</strong>{document.title}</li>
+            <li className="document-bar"><strong>{t("documents.description")}:</strong>{document.description}</li>
             <hr className="horizontal-line-card"/>
-            <li className="locate-center">Action</li>
+            <li className="locate-center">{t("button.action")}</li>
             <li>
               <Button
               onView={()=>handleView(document)}
@@ -101,54 +101,54 @@ function ManageDocuments() {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
-        <h2 className="modal-title">Create a New Document</h2>
+        <h2 className="modal-title">{t("documents.create")}</h2>
         <div className="form-container">
-          <label className="form-label">Title</label>
+          <label className="form-label">{t("documents.title")}</label>
           <input
-            placeholder="Title"
+            placeholder={t("documents.title")}
             className="form-input"
             type="text"
             value={formData.title}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
           />
-          <label className="form-label">Description</label>
+          <label className="form-label">{t("documents.description")}</label>
           <input
-            placeholder="Description"
+            placeholder={t("documents.description")}
             className="form-input"
             type="text"
             value={formData.description}
             onChange={(e) => setFormData({ ...formData, description: e.target.value })}
           />
-          <label className="form-label">Upload File</label>
+          <label className="form-label">{t("documents.upload")}</label>
           <input
             className="form-input"
             type="file"
             value={formData.department}
             onChange={(e) => setFormData({ ...formData, department: e.target.value })}
           />
-          <button className="form-button" onClick={handleSave}>Save</button>
+          <button className="form-button" onClick={handleSave}>{t("button.save")}</button>
         </div>
       </Modal>
       {closediv ? (
         <div className="comp-div-for-display-information-for-all">
           <br />
-          <strong>Document Information</strong>
+          <strong>{t("documents.information")}</strong>
           <br />
           <hr />
           <br />
           <p>
-            <strong>Title:</strong>
+            <strong>{t("documents.title")}:</strong>
             {Information.title}
           </p>
           <p>
-            <strong>Description:</strong>
+            <strong>{t("documents.description")}:</strong>
             {Information.description}
           </p>
           <button
             onClick={handleCloseView}
             className="comp-div-for-display-button"
           >
-            Back
+            {t("button.back")}
           </button>
         </div>
       ) : (

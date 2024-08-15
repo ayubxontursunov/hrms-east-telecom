@@ -8,7 +8,7 @@ import { PiStudentBold } from "react-icons/pi";
 import { GrDocumentUser } from "react-icons/gr";
 import { GrDocumentText } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
-
+import logoImg from "../../image/logo_2.png";
 import "./Sidebar.css";
 function Sidebar() {
   const { t } = useTranslation("global");
@@ -19,7 +19,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-top">
-        <Logo onClick={handleOpenNewWindow}/>
+        <Logo onClick={handleOpenNewWindow} logoImg={logoImg}/>
         <nav className="sidebar-nav">
           <NavLink
             to="dashboard"

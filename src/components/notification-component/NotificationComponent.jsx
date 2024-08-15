@@ -1,11 +1,13 @@
 import TypingEffect from "../../utils/TypingEffect";
 import "./NotificationComponent.css"
+import { useTranslation } from "react-i18next";
 function NotificationComponent() {
-  const textToType = "For now, you do not have a new message!";
+  const {t} = useTranslation("global");
+  const textToType = t("notification.content");
   return (
     <div className="default-height">
       <p>
-        <strong>Notification Alert</strong>
+        <strong>{t("notification.label")}</strong>
         <hr />
       </p>
       <br />

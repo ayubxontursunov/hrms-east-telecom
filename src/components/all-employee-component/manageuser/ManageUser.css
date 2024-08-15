@@ -24,7 +24,7 @@
 }
 .information-title{
      display: grid;
-     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-columns: 20% 20% 20% 40% !important;
      align-items: center;     
      color: #0E0D0D;
      font-weight: 700;
@@ -38,8 +38,8 @@
      padding: 24px 28px;
 }
 .employee-content{
-     grid-template-columns: 25% 25% 25% 25%;
      display: grid;
+     grid-template-columns: 20% 20% 20% 40% !important;
      border: 1px solid #979393;
      border-radius: 7px;
      padding: 10px 15px;
@@ -103,8 +103,8 @@ ul{
 .viewinformation-left{
      width: 100%;
      display: grid;
-     grid-template-columns: 15% 25% 25% 30%;
-     grid-template-rows: 25px 25px 25px 25px;
+     grid-template-columns: 15% 35% 50% !important;
+     grid-template-rows: 25px 25px 25px 25px 25px !important;
      /* justify-content: space-between; */
      margin-bottom: 30px;
 }
@@ -123,44 +123,44 @@ ul{
      width: 90%;
 }
 .user-view-item-1{
-     grid-column: 2;
-     grid-row: 1;
+     grid-column: 2 !important;
+     grid-row: 1 !important;
 }
 .user-view-item-2{
-     grid-column: 3;
-     grid-row: 1;
+     grid-column: 3 !important;
+     grid-row: 1 !important; 
 }
 .user-view-item-3{
-     grid-column: 4;
-     grid-row: 1;
+     grid-column: 2 !important;
+     grid-row: 2 !important;
 }
 .user-view-item-4{
-     grid-column: 2;
-     grid-row: 2;
+     grid-column: 3 !important;
+     grid-row: 2 !important;
 }
 .user-view-item-5{
-     grid-column: 3;
-     grid-row: 2;
+     grid-column: 2 !important;
+     grid-row: 3 !important;
 }
 .user-view-item-6{
-     grid-column: 4;
-     grid-row: 2;
+     grid-column: 3 !important;
+     grid-row: 3 !important;
 }
 .user-view-item-7{
-     grid-column: 2;
-     grid-row: 3;
+     grid-column: 2 !important;
+     grid-row: 4 !important;
 }
 .user-view-item-8{
-     grid-column: 3;
-     grid-row: 3;
+     grid-column: 3 !important;
+     grid-row: 4 !important;
 }
 .user-view-item-9{
-     grid-column: 4;
-     grid-row: 3;
+     grid-column: 2 !important;
+     grid-row: 5 !important;
 }
 .user-view-item-10{
-     grid-column: 2;
-     grid-row: 4;
+     grid-column: 3 !important;
+     grid-row: 5 !important;
 }
 .viewinformation-left p{
      color: rgb(35, 59, 84);

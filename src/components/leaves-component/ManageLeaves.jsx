@@ -91,7 +91,7 @@ function ManageLeave() {
   };
   return (
     <div className="manage-leave-container">
-      <h3 className="title">{t("sidebar.leaves")}</h3>
+      <h3 className="title">{t("leaves.leaves")}</h3>
       <div className="create-search-field">
         {isAdmin && (
           <button onClick={() => openModal()} className="search-field-button">
@@ -101,7 +101,7 @@ function ManageLeave() {
         <div className="all-comp-search-wrap">
           <input
             type="text"
-            placeholder={t("search")}
+            placeholder={t("button.search")}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-field"
@@ -110,22 +110,15 @@ function ManageLeave() {
         </div>
       </div>
       <div className="display-information">
-        <ul className="leaves-grid">
-          <li className="separate-bar">Employee Name</li>
-          <li className="separate-bar">Date of Application</li>
-          <li className="separate-bar">Application Type</li>
-          <li className="separate-bar">Duration</li>
-          <li className="separate-bar">Status</li>
-          <li className="locate-center">Action</li>
-        </ul>
+        <div className="leaves-information">
         {filteredLeaves.map((leave) => (
           <ul className="leaves-content" key={leave.id}>
-            <li className="separate-bar">{leave.employeeName}</li>
-            <li className="separate-bar">{leave.dateOfApplication}</li>
-            <li className="separate-bar">{leave.applicationType}</li>
-            <li className="separate-bar">{leave.duration}</li>
+            <li className="leaves-bar"><strong>{t("leaves.name")}:</strong>{leave.employeeName}</li>
+            <li className="leaves-bar"><strong>{t("leaves.date")}:</strong>{leave.dateOfApplication}</li>
+            <li className="leaves-bar"><strong>{t("leaves.type")}:</strong>{leave.applicationType}</li>
+            <li className="leaves-bar"><strong>{t("leaves.duration")}:</strong>{leave.duration}</li>
             <li
-              className={`separate-bar ${
+              className={`leaves-bar ${
                 leave.status === "approved"
                   ? "approved-item-separate"
                   : leave.status === "pending"
@@ -135,8 +128,11 @@ function ManageLeave() {
                   : null
               }`}
             >
-              {leave.status}
+              <strong>{t("leaves.status")}:</strong>{leave.status}
             </li>
+            <hr />
+            <li className="align-center"><strong>{t("button.action")}</strong></li>
+            <br />
             <li>
               <Button
                 onView={() => handleView(leave)}
@@ -146,6 +142,7 @@ function ManageLeave() {
             </li>
           </ul>
         ))}
+        </div>
       </div>
 
       <Modal
@@ -156,13 +153,13 @@ function ManageLeave() {
       >
         <h2 className="modal-title">
           {!formData.id
-            ? "Create a New Leave Application"
-            : "Edit Leave Application"}
+            ? t("leaves.create")
+            : t("leaves.edit")}
         </h2>
         <div className="form-container">
-          <label className="form-label">Employee Name</label>
+          <label className="form-label">{t("leaves.name")}</label>
           <input
-            placeholder="Employee Name"
+            placeholder={t("leaves.name")}
             className="form-input"
             type="text"
             value={formData.employeeName}
@@ -170,7 +167,7 @@ function ManageLeave() {
               setFormData({ ...formData, employeeName: e.target.value })
             }
           />
-          <label className="form-label">Date of Application</label>
+          <label className="form-label">{t("leaves.date")}</label>
           <input
             className="form-input"
             type="date"
@@ -179,9 +176,9 @@ function ManageLeave() {
               setFormData({ ...formData, dateOfApplication: e.target.value })
             }
           />
-          <label className="form-label">Application Type</label>
+          <label className="form-label">{t("leaves.type")}</label>
           <input
-            placeholder="Application Type"
+            placeholder={t("leaves.type")}
             className="form-input"
             type="text"
             value={formData.applicationType}
@@ -189,9 +186,9 @@ function ManageLeave() {
               setFormData({ ...formData, applicationType: e.target.value })
             }
           />
-          <label className="form-label">Duration</label>
+          <label className="form-label">{t("leaves.duration")}</label>
           <input
-            placeholder="Duration"
+            placeholder={t("leaves.duration")}
             className="form-input"
             type="text"
             value={formData.duration}
@@ -199,7 +196,7 @@ function ManageLeave() {
               setFormData({ ...formData, duration: e.target.value })
             }
           />
-          <label className="form-label">Status</label>
+          <label className="form-label">{t("leaves.status")}</label>
           <select
             className="form-input form-select"
             value={formData.status}
@@ -207,9 +204,9 @@ function ManageLeave() {
               setFormData({ ...formData, status: e.target.value })
             }
           >
-            <option value="pending">Pending</option>
-            <option value="approved">Approved</option>
-            <option value="rejected">Rejected</option>
+            <option value="pending">{t("leaves.pending")}</option>
+            <option value="approved">{t("leaves.approved")}</option>
+            <option value="rejected">{t("leaves.rejected")}</option>
           </select>
           <button className="form-button" onClick={handleSave}>
             {t("button.save")}
@@ -219,23 +216,23 @@ function ManageLeave() {
       {closediv ? (
         <div className="comp-div-for-display-information-for-all">
           <br />
-          <strong>Leave Information</strong>
+          <strong>{t("leaves.information")}</strong>
           <br />
           <hr />
           <br />
           <p>
-            <strong>Employee:</strong>
+            <strong>{t("leaves.name")}:</strong>
             {leaveInformation.employeeName}
           </p>
           <p>
-            <strong>Date of Application:</strong>
+            <strong>{t("leaves.date")}:</strong>
             {leaveInformation.dateOfApplication}
           </p>
           <button
             onClick={handleCloseView}
             className="comp-div-for-display-button"
           >
-            Back
+            {t("button.back")}
           </button>
         </div>
       ) : (

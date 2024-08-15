@@ -181,14 +181,28 @@ ul{
 
 .user-content-wrap{
      display: flex;
-     gap: 10px;
+     flex-wrap: wrap;
+     gap: 2%;
 }
 .user-content{
-     width: 33%;
-     display: grid;
+     width: 49% !important;
+     display: flex;
+     flex-direction: column;
      gap: 5px;
      border: 1px solid;
      border-radius: 7px;
-     padding: 10px 5px;
-     justify-content: space-between;
+     padding: 10px 15px;
+     justify-content: center;
+     margin-bottom: 2%;
+}
+.user-bar{
+     width: 100%;
+}
+.wrap-user-content{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+.align-center-action{
+     text-align: center;
 }

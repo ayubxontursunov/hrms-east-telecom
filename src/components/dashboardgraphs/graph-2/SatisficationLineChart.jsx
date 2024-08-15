@@ -9,45 +9,45 @@ import {
   Tooltip,
   Legend
 } from 'chart.js';
-
+import { useTranslation } from 'react-i18next';
 ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend);
 
 const SatisfactionLineChart = () => {
   const totalEmployees = 750;
-
+  const {t} = useTranslation("global")
   // Calculate the percentage of employees for each dataset
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: [t("dashboard.graphs.january"), t("dashboard.graphs.february"), t("dashboard.graphs.march"), t("dashboard.graphs.april"), t("dashboard.graphs.may"), t("dashboard.graphs.june"), t("dashboard.graphs.july")],
     datasets: [
       {
-        label: 'Satisfied',
+        label: t("dashboard.graphs.satisfied"),
         data: [150, 160, 170, 180, 190, 200, 210], // Example data adjusted
-        borderColor: '#36A2EB',
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: '#1E90FF',
+        backgroundColor: 'rgba(30, 144, 255, 0.2)',
         fill: true,
         tension: 0.1,
         pointRadius: 5,
-        pointBackgroundColor: '#36A2EB'
+        pointBackgroundColor: '#1E90FF'
       },
       {
-        label: 'Neutral',
+        label: t("dashboard.graphs.neutral"),
         data: [120, 115, 110, 105, 100, 95, 90], // Example data adjusted
-        borderColor: '#FFCE56',
-        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+        borderColor: '#FFD700',
+        backgroundColor: 'rgba(255, 215, 0, 0.2)',
         fill: true,
         tension: 0.1,
         pointRadius: 5,
-        pointBackgroundColor: '#FFCE56'
+        pointBackgroundColor: '#FFD700'
       },
       {
-        label: 'Unsatisfied',
+        label: t("dashboard.graphs.unsatisfied"),
         data: [30, 35, 40, 45, 50, 55, 60], // Example data adjusted
-        borderColor: '#FF6384',
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: '#E74C3C',
+        backgroundColor: 'rgba(231, 76, 60, 0.2)',
         fill: true,
         tension: 0.1,
         pointRadius: 5,
-        pointBackgroundColor: '#FF6384'
+        pointBackgroundColor: '#E74C3C'
       }
     ]
   };
@@ -75,7 +75,7 @@ const SatisfactionLineChart = () => {
         },
         title: {
           display: true,
-          text: 'Month',
+          text: t("dashboard.graphs.month"),
           color: '#333',
           font: {
             size: 14
@@ -88,7 +88,7 @@ const SatisfactionLineChart = () => {
         },
         title: {
           display: true,
-          text: 'Number of Employees',
+          text: t("dashboard.graphs.number-of-employees"),
           color: '#333',
           font: {
             size: 14
@@ -102,7 +102,7 @@ const SatisfactionLineChart = () => {
 
   return (
     <div className="chart-container">
-      <h3>Employee Satisfaction Trend</h3>
+      <h3>{t("dashboard.graphs.employee-satisfaction-trend")}</h3>
       <br />
       <Line data={data} options={options} />
     </div>

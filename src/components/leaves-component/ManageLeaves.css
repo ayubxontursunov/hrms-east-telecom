@@ -1,16 +1,8 @@
-.leaves-grid{
-     display: grid;
-     grid-template-columns: 17% 19% 17% 11% 11% 25%;
-     justify-content: space-between;
-     align-items: center;     
-     color: #0E0D0D;
-     font-weight: 700;
-     padding: 10px 15px;
-}
 .leaves-content{
      display: grid;
-     grid-template-columns: 17% 19% 17% 11% 11% 25%;
-     justify-content: space-between;
+     width: 49%;
+     height: max-content;
+     grid-template-rows: 25px 25px 25px 25px 25px 25px;
      border: 1px solid #979393;
      border-radius: 7px;
      padding: 10px 15px;
@@ -24,7 +16,7 @@
 }
 
 .pending-item-separate::before{
-     width: 90%;
+     width: 100%;
      position: absolute;
      background-color: #FFF3DE;
      content: "";
@@ -32,7 +24,7 @@
      border-radius: 7px;
      height: 25px;
      top: -4px;
-     left: -15px;
+     left: -1px;
 }
 .approved-item-separate{
      position: relative;
@@ -41,7 +33,7 @@
 }
 
 .approved-item-separate::before{
-     width: 90%;
+     width: 100%;
      position: absolute;
      background-color: #E3F2FD;
      content: "";
@@ -49,7 +41,7 @@
      border-radius: 7px;
      height: 25px;
      top: -4px;
-     left: -15px;
+     left: -1px;
 }
 
 
@@ -60,7 +52,7 @@
 }
 
 .rejected-item-separate::before{
-     width: 90%;
+     width: 100%;
      position: absolute;
      background-color: #FFEAED;
      content: "";
@@ -68,7 +60,7 @@
      border-radius: 7px;
      height: 25px;
      top: -4px;
-     left: -15px;
+     left: -1px;
 }
 
 .all-comp-search-wrap{
@@ -104,4 +96,12 @@
      color: white;
      padding: 5px 10px;
      border-radius: 7px;
+}
+.leaves-information{
+     display: flex;
+     gap: 10px;
+     flex-wrap: wrap;
+}
+.align-center{
+     text-align: center;
 }

@@ -9,11 +9,12 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
 import { GrFormView } from "react-icons/gr";
 import { MdOutlineFileDownload } from "react-icons/md";
-
+import { useTranslation } from "react-i18next";
 
 
 
 const ProfileComponent = () => {
+  const {t} = useTranslation("global");
   const [activeTab, setActiveTab] = useState('personal');
   const viewDocument = () => {
     // Logic to view the document
@@ -33,151 +34,94 @@ const ProfileComponent = () => {
           <div className="tab-content">
             <div className="row">
               <div className="col">
-                <p>First Name</p>
+                <p>{t("profile.personal.first-name")}</p>
                 <h4>Lisa</h4>
               </div>
               <div className="col move-left">
-                <p>Last Name</p>
+                <p>{t("profile.personal.last-name")}</p>
                 <h4>Simmons</h4>
               </div>
             </div>
             <div className="row">
               <div className="col">
-                <p>Mobile Number</p>
-                <h4>(702) 555-0122</h4>
-              </div>
-              {/* <div className="col">
-                <p>Mobile Number</p>
-                <h4>(702) 555-0122</h4>
-              </div> */}
-              <div className="col move-left">
-                <p>Email Address</p>
-                <h4>lisa@gmail.com</h4>
-              </div>
-
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>Date of Birth</p>
+                <p>{t("profile.personal.date-of-birth")}</p>
                 <h4>July 14,1995</h4>
               </div>
               <div className="col move-left">
-                <p>Marital Status</p>
+                <p>{t("profile.personal.marital-status")}</p>
                 <h4>Married</h4>
               </div>
             </div>
             <div className="row">
               <div className="col">
-                <p>Gender</p>
-                <h4>Female</h4>
+                <p>{t("profile.personal.address")}</p>
+                <h4>Tashkent</h4>
               </div>
               <div className="col move-left">
-                <p>Nationality</p>
-                <h4>America</h4>
+                <p>{t("profile.personal.nationality")}</p>
+                <h4>English</h4>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col">
-                <p>Address</p>
-                <h4>2464 Royal Ln. Mesa, New Jersey</h4>
-              </div>
-              <div className="col move-left">
-                <p>City</p>
-                <h4>California</h4>
-              </div>
-            </div>
+            
             {/* Add remaining fields similarly */}
           </div>
         );
       case 'professional':
         return (
           <div className="tab-content">
-            <div className="row">
-              <div className="col">
-                <p>LDAP username</p>
-                <h4>brooklyn_simmons</h4>
-              </div>
-              <div className="col move-left">
-                <p>Email Address</p>
-                <h4>brooklyn@example.com</h4>
-              </div>
-            </div>
-
 
             <div className="row">
               <div className="col">
-                <p>Employee Type</p>
-                <h4>Office</h4>
+                <p>{t("profile.personal.job-type")}</p>
+                <h4>Full Type</h4>
               </div>
               <div className="col move-left">
-                <p>Position</p>
+                <p>{t("profile.personal.job-title")}</p>
                 <h4>Product Manager</h4>
               </div>
             </div>
 
             <div className="row">
               <div className="col">
-                <p>Department</p>
+                <p>{t("profile.personal.department")}</p>
                 <h4>New Biz</h4>
               </div>
               <div className="col move-left">
-                <p>Rank</p>
-                <h4>Senior</h4>
+                <p>{t("profile.personal.education")}</p>
+                <h4>Bachelor</h4>
               </div>
             </div>
 
             <div className="row">
               <div className="col">
-                <p>Division</p>
+                <p>{t("profile.personal.division")}</p>
                 <h4>IT Biz</h4>
               </div>
               <div className="col move-left">
-                <p>Duty</p>
+                <p>{t("profile.personal.duty")}</p>
                 <h4>E-commerce Platform</h4>
               </div>
             </div>
 
             <div className="row">
               <div className="col">
-                <p>Team</p>
+                <p>{t("profile.personal.team")}</p>
                 <h4>Product Management</h4>
               </div>
               <div className="col move-left">
-                <p>Wages</p>
+                <p>{t("profile.personal.wages")}</p>
                 <h4>$2500</h4>
               </div>
             </div>
+            
             <div className="row">
               <div className="col">
-                <p>Education</p>
-                <h4>Westminister university, IT business faculty</h4>
+                <p>{t("profile.personal.supervisor")}</p>
+                <h4>Jonatan Smith</h4>
               </div>
               <div className="col move-left">
-                <p>Work Experience</p>
-                <h4>+5 years</h4>
-              </div>
-
-
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>Working Days</p>
-                <h4>5 Days</h4>
-              </div>
-              <div className="col move-left">
-                <p>Hobbies</p>
-                <h4>Reading, Swimming</h4>
-              </div>
-
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>Office Location</p>
-                <h4>2464 Royal Ln. Mesa, New Jersey</h4>
-              </div>
-              <div className="col move-left">
-                <p>Joining Date</p>
+                <p>{t("profile.personal.joined-date")}</p>
                 <h4>July 10,2022</h4>
               </div>
             </div>
@@ -190,14 +134,14 @@ const ProfileComponent = () => {
         return (
           <div className="documents-container">
             <div className="document-item">
-              <span className="document-title">CV Resume.pdf</span>
+              <span className="document-title">{t("profile.personal.cv-doc")}</span>
               <div className="document-actions">
                 <GrFormView className="icon" onClick={viewDocument} />
                 <MdOutlineFileDownload className="icon" onClick={downloadDocument} />
               </div>
             </div>
             <div className="document-item">
-              <span className="document-title">Certificates.pdf</span>
+              <span className="document-title">{t("profile.personal.license")}</span>
               <div className="document-actions">
                 <GrFormView className="icon" onClick={viewDocument} />
                 <MdOutlineFileDownload className="icon" onClick={downloadDocument} />
@@ -212,25 +156,15 @@ const ProfileComponent = () => {
           <div className="tab-content">
             <div className="row">
               <div className="col">
-                <p>Outlook address</p>
-                <h4>lisa@outlook.com</h4>
-              </div>
-              <div className="col move-left">
-                <p>LDAP ID</p>
-                <h4>Simmons</h4>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>Phone Number</p>
+                <p>{t("profile.personal.phone-number")}</p>
                 <h4>+998977586878</h4>
               </div>
               <div className="col move-left">
-                <p>LinkedIn</p>
-                <h4>Lisa Simons</h4>
+                <p>{t("profile.personal.email-address")}</p>
+                <h4>lisa@gmail.com</h4>
               </div>
             </div>
-            {/* Add remaining fields similarly */}
+            {/*Add remaining fields similarly */}
           </div>
         );
       default:
@@ -251,28 +185,23 @@ const ProfileComponent = () => {
 
 
       </div>
-      {/* <div className="profile-tabs">
-        <button onClick={() => setActiveTab('personal')}><FaRegUser style={{ margin: '2px 6px 0 8px' }} />  Personal Information</button>
-        <button onClick={() => setActiveTab('professional')}><MdWorkOutline style={{ margin: '2px 6px 0 8px' }} />Professional Information</button>
-        <button onClick={() => setActiveTab('documents')}><FaRegFileAlt style={{ margin: '2px 6px 0 8px' }} />Documents</button>
-        <button onClick={() => setActiveTab('account')}><MdOutlineSupervisorAccount style={{ margin: '2px 6px 0 8px' }} />Account Access</button>
-      </div> */}
+      
       <div className="profile-tabs">
         <button id="button-profile" className={activeTab === 'personal' ? 'active' : ''} onClick={() => setActiveTab('personal')}>
           <FaRegUser style={{ marginRight: '8px' }} />
-          Personal Information
+          {t("profile.heading.personal")}
         </button>
         <button id="button-profile" className={activeTab === 'professional' ? 'active' : ''} onClick={() => setActiveTab('professional')}>
           <MdWorkOutline style={{ marginRight: '8px' }} />
-          Professional Information
+          {t("profile.heading.professional")}
         </button>
         <button id="button-profile" className={activeTab === 'documents' ? 'active' : ''} onClick={() => setActiveTab('documents')}>
           <FaRegFileAlt style={{ marginRight: '8px' }} />
-          Documents
+          {t("profile.heading.documents")}
         </button>
         <button id="button-profile" className={activeTab === 'account' ? 'active' : ''} onClick={() => setActiveTab('account')}>
           <MdOutlineSupervisorAccount style={{ marginRight: '8px' }} />
-          Account Access
+          {t("profile.heading.account")}
         </button>
       </div>
 

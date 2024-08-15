@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import './Work.css'
-
+import { useTranslation } from 'react-i18next';
 const Work = ({ next, previous, formData, setFormData }) => {
+  const {t} = useTranslation("global");
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -30,14 +31,14 @@ const Work = ({ next, previous, formData, setFormData }) => {
     <div className='add-employee-container'>
       <form className='work-form' onSubmit={handleFormSubmit}>
         <div className="label-wrap">
-          <label className='form-label'>Job Type</label>
-          <label className='form-label'>Duty</label>
+          <label className='form-label'>{t("profile.personal.job-type")}</label>
+          <label className='form-label'>{t("profile.personal.duty")}</label>
         </div>
         <div className='form-input-group-wrap'>
           <input
             className="form-input-group"
             type="text"
-            placeholder='Full | Part | Intern...'
+            placeholder={t("profile.personal.job-type")}
             name='employmentType'
             value={formData.workInfo.employmentType}
             onChange={handleInputChange}
@@ -45,21 +46,21 @@ const Work = ({ next, previous, formData, setFormData }) => {
           <input
             className="form-input-group"
             type="text"
-            placeholder='Duty'
+            placeholder={t("profile.personal.duty")}
             name='duty'
             value={formData.workInfo.duty}
             onChange={handleInputChange}
           />
         </div>
         <div className="label-wrap">
-          <label className='form-label'>Department</label>
-          <label className='form-label'>Team</label>
+          <label className='form-label'>{t("profile.personal.department")}</label>
+          <label className='form-label'>{t("profile.personal.team")}</label>
         </div>
         <div className='form-input-group-wrap'>
           <input
             className="form-input-group"
             type="text"
-            placeholder='Department'
+            placeholder={t("profile.personal.department")}
             name='department'
             value={formData.workInfo.department}
             onChange={handleInputChange}
@@ -67,21 +68,21 @@ const Work = ({ next, previous, formData, setFormData }) => {
           <input
             className="form-input-group"
             type="text"
-            placeholder='Team'
+            placeholder={t("profile.personal.team")}
             name='team'
             value={formData.workInfo.team}
             onChange={handleInputChange}
           />
         </div>
         <div className="label-wrap">
-          <label className='form-label'>Job Title</label>
-          <label className='form-label'>Wages</label>
+          <label className='form-label'>{t("profile.personal.job-title")}</label>
+          <label className='form-label'>{t("profile.personal.wages")}</label>
         </div>
         <div className='form-input-group-wrap'>
           <input
             className="form-input-group"
             type="text"
-            placeholder='Job title'
+            placeholder={t("profile.personal.job-title")}
             name='jobTitle'
             value={formData.workInfo.jobTitle}
             onChange={handleInputChange}
@@ -89,21 +90,21 @@ const Work = ({ next, previous, formData, setFormData }) => {
           <input
             className="form-input-group"
             type="text"
-            placeholder='Wages'
+            placeholder={t("profile.personal.wages")}
             name='wages'
             value={formData.workInfo.wages}
             onChange={handleInputChange}
           />
         </div>
         <div className="label-wrap">
-          <label className='form-label'>Joined Date</label>
-          <label className='form-label'>Education</label>
+          <label className='form-label'>{t("profile.personal.division")}</label>
+          <label className='form-label'>{t("profile.personal.education")}</label>
         </div>
         <div className='form-input-group-wrap'>
           <input
             className="form-input-group form-input-group-date"
             type="text"
-            placeholder='Joined Date'
+            placeholder={t("profile.personal.division")}
             name='joinedDate'
             value={formData.workInfo.joinedDate}
             onChange={handleInputChange}
@@ -111,15 +112,15 @@ const Work = ({ next, previous, formData, setFormData }) => {
           <input
             className="form-input-group"
             type="text"
-            placeholder='Education'
+            placeholder={t("profile.personal.education")}
             name='education'
             value={formData.workInfo.education}
             onChange={handleInputChange}
           />
         </div>
         <div className='form-button-side-container'>
-          <button className='form-button-side' type="button" onClick={previous}>Previous</button>
-          <button className='form-button-side' type="submit">Next</button>
+          <button className='form-button-side' type="button" onClick={previous}>{t("button.previous")}</button>
+          <button className='form-button-side' type="submit">{t("button.next")}</button>
         </div>
       </form>
     </div>

@@ -12,7 +12,7 @@ function ItemCard({ title, label, img, link,color}) {
       <h3 className="item-title">{title}</h3>
       <p className="item-label">{label}</p>
       <Link to={link} className="item-link">
-        <span>{t("dashboard.first-section.link")}</span>
+        <span>{t("dashboard.cards.view")}</span>
         <IoIosArrowForward className="icon-view" />
       </Link>
     </div>

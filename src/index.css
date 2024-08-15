@@ -25,13 +25,24 @@ ul {
 input{
   outline: none;
   color: black;
-  font-weight: 600;
+  font-size: 14px;
 }
-button{
+button {
   box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to top, #851C1F, #EB3236);
+  background: linear-gradient(to top, #851C1F, #E74C3C);
   cursor: pointer;
+  color: #ECF0F1; 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px; 
+  transition: 0.5s; 
 }
+
+button:hover {
+  transform: translateY(-2px); 
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
 
 :root {
   --font-family-primary:Circe, sans-serif;

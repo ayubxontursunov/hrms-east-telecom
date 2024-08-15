@@ -2,7 +2,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell
 } from 'recharts';
 import PropTypes from 'prop-types';
-// Default data
+const COLORS = ['#82ca9d', '#ffc658', '#d88884', '#a4de6c', '#d0ed57', '#8dd1e1', '#83a6ed'];
 const DEFAULT_DATA = [
   { name: 'Adaptability', skillLevel: 75 },
   { name: 'Creativity', skillLevel: 78 },
@@ -12,8 +12,6 @@ const DEFAULT_DATA = [
   { name: 'Teamwork', skillLevel: 90 },
   { name: 'Time Management', skillLevel: 65 },
 ];
-
-const COLORS = ['#82ca9d', '#ffc658', '#d88884', '#a4de6c', '#d0ed57', '#8dd1e1', '#83a6ed'];
 
 const EmployeeSkillsBarChart = ({ data = DEFAULT_DATA }) => {
   return (

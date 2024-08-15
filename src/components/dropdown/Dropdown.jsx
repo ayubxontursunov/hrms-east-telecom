@@ -1,8 +1,9 @@
 import "./Dropdown.css";
-
+import { useTranslation } from "react-i18next";
 import Key from "../../auth/Key";
 import { useState } from "react";
 function Dropdown() {
+  const {t} = useTranslation("global");
   const [selectedOption1, setSelectedOption1] = useState("");
   const [selectedOption2, setSelectedOption2] = useState("");
   const setMood = Key((state) => state.setMood);
@@ -18,35 +19,35 @@ function Dropdown() {
   return (
     <div className="dropdown-wrap">
       <div className="wrapper-dropdown">
-        <h4 className="setting-description-text">Current Status</h4>
+        <h4 className="setting-description-text">{t("profile.status.current-status")}</h4>
         <select
           value={selectedOption1}
           onChange={handleSelectedOption1}
           className="dropdown-select"
         >
           <option value="" disabled>
-            Select your mood
+          {t("profile.status.select-mood")}
           </option>
-          <option value="🙂 Good">🙂 Good</option>
-          <option value="😐 Neutral">😐 Neutral</option>
-          <option value="😪 Stressed">😪 Stressed</option>
-          <option value="😡 Angry">😡 Angry</option>
+          <option value="🙂 Good">{t("profile.status.good")}</option>
+          <option value="😐 Neutral">{t("profile.status.neutral")}</option>
+          <option value="😪 Stressed">{t("profile.status.neutral")}</option>
+          <option value="😡 Angry">{t("profile.status.angry")}</option>
         </select>
       </div>
       <div className="wrapper-dropdown">
-        <h4 className="setting-description-text">Current Availability</h4>
+        <h4 className="setting-description-text">{t("profile.status.current-availability")}</h4>
         <select
           value={selectedOption2}
           onChange={handleSelectedOption2}
           className="dropdown-select"
         >
           <option value="" disabled>
-            Select your availablity
+          {t("profile.status.select-availability")}
           </option>
-          <option value="🟢 Available">🟢 Available</option>
-          <option value="📅 In a Meeting">📅 In a Meeting</option>
-          <option value="🏝️ Out of Office">🏝️ Out of Office</option>
-          <option value="🚫 Do Not Disturb">🚫 Do Not Disturb</option>
+          <option value="🟢 Available">{t("profile.status.available")}</option>
+          <option value="📅 In a Meeting">{t("profile.status.meeting")}</option>
+          <option value="🏝️ Out of Office">{t("profile.status.office")}</option>
+          <option value="🚫 Do Not Disturb">{t("profile.status.disturb")}</option>
         </select>
       </div>
     </div>

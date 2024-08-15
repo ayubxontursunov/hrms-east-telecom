@@ -1,7 +1,7 @@
 .grid-container {
      display: grid;
      grid-template-rows: 110px;
-     grid-template-columns: 22% 24% 27% 23%;
+     grid-template-columns: 24% 24% 24% 24%;
      justify-content: space-between;
      background-color: white;
      padding: 12px 24px;

@@ -7,20 +7,19 @@ import {
 } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import './DoughnutChart.css';
-
-// Register required components for Chart.js
+import { useTranslation } from 'react-i18next';
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
-
 const DoughnutChart = () => {
+  const {t} = useTranslation("global");
   const departmentData = [
-    { name: 'Sales', employees: 120 },
-    { name: 'Marketing', employees: 100 },
-    { name: 'Engineering', employees: 200 },
-    { name: 'HR', employees: 60 },
-    { name: 'Finance', employees: 80 },
-    { name: 'Operations', employees: 80 },
-    { name: 'IT', employees: 40 },
-    { name: 'Legal', employees: 30 },
+    { name: t("dashboard.graphs.sales"), employees: 120 },
+    { name: t("dashboard.graphs.marketing"), employees: 100 },
+    { name: t("dashboard.graphs.engineering"), employees: 200 },
+    { name: t("dashboard.graphs.hr"), employees: 60 },
+    { name: t("dashboard.graphs.finance"), employees: 80 },
+    { name: t("dashboard.graphs.operations"), employees: 80 },
+    { name: t("dashboard.graphs.it"), employees: 40 },
+    { name: t("dashboard.graphs.legal"), employees: 30 },
   ];
 
   const totalEmployees = 720;
@@ -28,11 +27,11 @@ const DoughnutChart = () => {
   const data = {
     labels: departmentData.map((dept) => dept.name),
     datasets: [{
-      label: 'Employees by Department',
+      label: t("dashboard.graphs.percentage-of-employees-by-department"),
       data: departmentData.map((dept) => dept.employees),
       backgroundColor: [
-        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF',
-        '#FF9F40', '#FF6347', '#B0E57C'
+        '#851C1F', '#E74C3C', '#FFD700', '#1E90FF', '#FF6347',
+        '#4BC0C0', '#8A2BE2', '#00FA9A'
       ],
       hoverOffset: 4,
     }],
@@ -68,7 +67,7 @@ const DoughnutChart = () => {
 
   return (
     <div className="doughnut-chart-wrapper">
-     <h3>Percentage of Employees by Department</h3>
+     <h3>{t("dashboard.graphs.percentage-of-employees-by-department")}</h3>
      <br />
       <div className="doughnut-chart-container">
         <Doughnut data={data} options={options} />

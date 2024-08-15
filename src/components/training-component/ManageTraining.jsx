@@ -66,7 +66,7 @@ function ManageTraining() {
 
   return (
     <div className="manage-training-container">
-      <h3 className="title">{t("sidebar.training")}</h3>
+      <h3 className="title">{t("training.training")}</h3>
       <div className="create-search-field">
         {Key((state)=>state.isAdmin)?      <button onClick={() => openModal()} className="search-field-button">
           {t("button.create")}
@@ -74,7 +74,7 @@ function ManageTraining() {
         <div className="all-comp-search-wrap">
           <input
             type="text"
-            placeholder={t("search")}
+            placeholder={t("button.search")}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-field"
@@ -84,9 +84,9 @@ function ManageTraining() {
       </div>
       <div className="display-information">
         <ul className="training-grid">
-          <li className="separate-bar">Title</li>
-          <li className="separate-bar">Description</li>
-          <li className="locate-center">Action</li>
+          <li className="separate-bar">{t("training.title")}</li>
+          <li className="separate-bar">{t("training.description")}</li>
+          <li className="locate-center">{t("button.action")}</li>
         </ul>
         {filteredTrainings.map((training) => (
           <ul className="training-content" key={training.id}>
@@ -109,62 +109,62 @@ function ManageTraining() {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
-        <h2 className="modal-title">{!formData.id ? "Create a New Training" : "Edit Training"}</h2>
+        <h2 className="modal-title">{!formData.id ? t("training.create") : t("training.edit")}</h2>
         <div className="form-container">
-          <label className="form-label">Title</label>
+          <label className="form-label">{t("training.title")}</label>
           <input
-            placeholder="Title"
+            placeholder={t("training.title")}
             className="form-input"
             type="text"
             value={formData.title}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
           />
-          <label className="form-label">Description</label>
+          <label className="form-label">{t("training.description")}</label>
           <input
-            placeholder="Description"
+            placeholder={t("training.description")}
             className="form-input"
             type="text"
             value={formData.description}
             onChange={(e) => setFormData({ ...formData, description: e.target.value })}
           />
-          <label className="form-label">Department</label>
+          <label className="form-label">{t("training.department")}</label>
           <input
-            placeholder="Department"
+            placeholder={t("training.department")}
             className="form-input"
             type="text"
             value={formData.department}
             onChange={(e) => setFormData({ ...formData, department: e.target.value })}
           />
-          <label className="form-label">Start Date</label>
+          <label className="form-label">{t("training.start")}</label>
           <input
             className="form-input"
             type="date"
             value={formData.startDate}
             onChange={(e) => setFormData({ ...formData, startDate: e.target.value })}
           />
-          <button className="form-button" onClick={handleSave}>Save</button>
+          <button className="form-button" onClick={handleSave}>{t("button.save")}</button>
         </div>
       </Modal>
       {closediv ? (
         <div className="comp-div-for-display-information-for-all">
           <br />
-          <strong>Training Information</strong>
+          <strong>{t("training.information")}</strong>
           <br />
           <hr />
           <br />
           <p>
-            <strong>Title:</strong>
+            <strong>{t("training.title")}:</strong>
             {Information.title}
           </p>
           <p>
-            <strong>Description:</strong>
+            <strong>{t("training.description")}:</strong>
             {Information.description}
           </p>
           <button
             onClick={handleCloseView}
             className="comp-div-for-display-button"
           >
-            Back
+            {t("button.back")}
           </button>
         </div>
       ) : (

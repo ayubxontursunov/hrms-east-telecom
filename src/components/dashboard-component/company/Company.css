@@ -54,54 +54,21 @@ button{
 .button_edit_an {
     position:absolute;
     margin-left: 70%;
-    width: 26px;
-    height: 22px;
     border: unset;
     border-radius: 7px;
-    background-color: white;
-    display: flex;
-    align-items: center;
+    padding:  5px 12px;
     justify-content: center;
-    gap: 4px;
-    color: white;
-    font-weight: bold;
+    color: white !important;
 }
-
-.button_edit_an:hover {
-    background-color: #136D12;
-    color: white;
-}
-
-/* .et-3d_wrapper {
-    width: 50%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    top: -333px;
-    left: 20%;
-} */
 
 .button_delete_an {
     position: absolute;
-    margin-left: 76%;
-    width: 26px;
-    height: 22px;
+    padding:  5px 12px;
+    margin-left: 80%;
     border: unset;
     border-radius: 7px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
     color: white;
-    font-weight: bold;
-}
-
-.button_delete_an:hover {
-    background-color: #9A1712;
-    color: white;
+    width: max-content;
 }
 
 .form-button {

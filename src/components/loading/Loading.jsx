@@ -9,13 +9,13 @@ function Loading() {
     const interval = setInterval(() => {
       setPercentage((prev) => {
         if (prev < 100) {
-          return prev + 5;
+          return prev + 10;
         } else {
           clearInterval(interval);
           return prev;
         }
       });
-    }, 150); // 3000ms / 100 steps = 30ms per increment
+    }, 60); // 3000ms / 100 steps = 30ms per increment
 
     return () => clearInterval(interval); // Clear the interval when the component unmounts
   }, []);
@@ -24,9 +24,9 @@ function Loading() {
     <div className="loading-container">
       <div className="loading-container-element-wrap">
         <img className="loading-logo-img" src={logoimg} alt="logo img" />
-        <h3 className="logo-title loading-title">EAST TELECOM</h3>
+        <h3 className="logo-title-loading loading-title">EAST TELECOM</h3>
       </div>
-      <h3 className="logo-title">
+      <h3 className="logo-title-loading">
         Loading... <strong>{percentage}%</strong>
       </h3>
     </div>

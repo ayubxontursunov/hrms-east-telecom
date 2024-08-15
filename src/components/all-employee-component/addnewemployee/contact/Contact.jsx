@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import './Contact.css';
-
+import { useTranslation } from 'react-i18next';
 const Contact = ({ previous, next, formData, setFormData }) => {
+  const {t} = useTranslation("global");
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -29,36 +30,36 @@ const Contact = ({ previous, next, formData, setFormData }) => {
   return (
     <div className='add-employee-container'>
       <form className='personal-information-form' onSubmit={handleFormSubmit}>
-        <label className="form-label">Address</label>
+        <label className="form-label">{t("profile.personal.address")}</label>
         <input
           className='form-input'
           type="text"
-          placeholder='Region/City/Street'
+          placeholder={t("profile.personal.address")}
           name='region'
           value={formData.contactInfo.region}
           onChange={handleInputChange}
         />
-        <label className="form-label">Phone Number</label>
+        <label className="form-label">{t("profile.personal.phone-number")}</label>
         <input
           className='form-input'
           type="text"
-          placeholder='Phone Number'
+          placeholder={t("profile.personal.phone-number")}
           name='phoneNumber'
           value={formData.contactInfo.phoneNumber}
           onChange={handleInputChange}
         />
-        <label className='form-label'>Email</label>
+        <label className='form-label'>{t("profile.personal.email-address")}</label>
         <input
           className='form-input'
-          type="text"
-          placeholder='Email'
+          type="email"
+          placeholder={t("profile.personal.email-address")}
           name='email'
           value={formData.contactInfo.email || ''}
           onChange={handleInputChange}
         />
         <div className='form-button-side-container'>
-          <button className='form-button-side' type="button" onClick={previous}>Previous</button>
-          <button className='form-button-side' type="submit">Next</button>
+          <button className='form-button-side' type="button" onClick={previous}>{t("button.previous")}</button>
+          <button className='form-button-side' type="submit">{t("button.next")}</button>
         </div>
       </form>
     </div>

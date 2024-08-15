@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import './Report.css';
-
+import { useTranslation } from 'react-i18next';
 const Report = ({ previous, close, formData, setFormData }) => {
+  const {t} = useTranslation("global");
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -32,36 +33,36 @@ const Report = ({ previous, close, formData, setFormData }) => {
   return (
     <div className="add-employee-container">
       <form className='report-form' onSubmit={handleFormSubmit}>
-        <label className="form-label">Supervisor</label>
+        <label className="form-label">{t("profile.personal.supervisor")}</label>
         <input
           className='form-input'
           type="text"
-          placeholder='Supervisor'
+          placeholder={t("profile.personal.supervisor")}
           name='supervisor'
           value={formData.reportInfo.supervisor}
           onChange={handleInputChange}
         />
-        <label className="form-label">First Level Approver</label>
+        <label className="form-label">{t("profile.personal.first-level-approver")}</label>
         <input
           className='form-input'
           type="text"
-          placeholder='First Level Approver'
+          placeholder={t("profile.personal.first-level-approver")}
           name='firstApprover'
           value={formData.reportInfo.firstApprover}
           onChange={handleInputChange}
         />
-        <label className="form-label">Second Level Approver</label>
+        <label className="form-label">{t("profile.personal.second-level-approver")}</label>
         <input
           className='form-input'
           type="text"
-          placeholder='Second Level Approver'
+          placeholder={t("profile.personal.second-level-approver")}
           name='secondApprover'
           value={formData.reportInfo.secondApprover}
           onChange={handleInputChange}
         />
         <div className='form-button-side-container'>
-          <button className='form-button-side' type="button" onClick={previous}>Previous</button>
-          <button className='form-button-side' type="submit">Save</button>
+          <button className='form-button-side' type="button" onClick={previous}>{t("button.previous")}</button>
+          <button className='form-button-side' type="submit">{t("button.save")}</button>
         </div>
       </form>
     </div>
