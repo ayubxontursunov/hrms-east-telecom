@@ -46,4 +46,19 @@
      border: none !important;
      box-shadow: none !important;
 }
-      
+
+.react-calendar__month-view__days__day{
+     color: #757575;
+}
+.react-calendar__navigation__label{
+     color: #757575;
+}
+.calendar__navigation__arrow {
+     color: #757575 !important;
+}
+.react-calendar__navigation__next2-button,.react-calendar__navigation__next-button,.react-calendar__navigation__prev-button,.react-calendar__navigation__prev2-button{
+     color: #757575 !important;
+}
+.react-calendar__month-view__days__day{
+     color: black;
+}

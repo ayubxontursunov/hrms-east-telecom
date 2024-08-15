@@ -22,7 +22,7 @@ const CalendarComponent = () => {
   }, [myLanguage]);
 
   return (
-    <div>
+    <div className='calendar-picker'>
      <h3 className='calendar-title'>{t("dashboard.middle.calendar")}</h3>
       <Calendar
         onChange={setSelectedDate}
