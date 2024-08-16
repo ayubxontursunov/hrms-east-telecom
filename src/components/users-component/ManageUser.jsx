@@ -11,8 +11,8 @@ function ManageUser() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({ id: null, name: "", email: "", role: "" });
   const [users, setUsers] = useState([
-    { id: 1, name: "John Doe", email: "john@example.com", role: "Admin" },
-    { id: 2, name: "Jane Smith", email: "jane@example.com", role: "User" },
+    { id: 1, name: "John", email: "john@example.com", role: "User" },
+    { id: 2, name: "Lisa", email: "jane@example.com", role: "Admin" },
   ]);
   const [searchTerm, setSearchTerm] = useState("");
 

@@ -11,7 +11,10 @@ import Form4 from "../addnewemployee/documents/Documents";
 import Form5 from "../addnewemployee/report/Report";
 import { CiSearch } from "react-icons/ci";
 import lilyImage from "../../../image/viewinfo2.jpg";
+import lisaImage from "../../../image/lisaImg.jpg";
+import johnImage from "../../../image/viewinfo1.jpg";
 import UserViews from "../../skill-excel/UserViews";
+
 function ManageUser() {
   const { t } = useTranslation("global");
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,6 +29,74 @@ function ManageUser() {
         dateOfBirth: "1990-01-01",
         maritalStatus: "Single",
         img: lilyImage,
+      },
+      workInfo: {
+        employmentType: "Full-time",
+        duty: "Software Development",
+        department: "NBD",
+        team: "SW Development",
+        jobTitle: "Software Engineer",
+        wages: "1000 USD",
+        joinedDate: "2015-06-15",
+        education: "Bachelor's Degree in Computer Science",
+      },
+      contactInfo: {
+        region: "Tashkent",
+        phoneNumber: "+998 00 000 00 00",
+        email: "abdulla@example.com",
+      },
+      documents: {
+        document1: "resume.pdf",
+        document2: "coverletter.pdf",
+      },
+      reportInfo: {
+        supervisor: "Doniyor",
+        firstApprover: "Jane Smith",
+        secondApprover: "Robert Brown",
+      },
+    },
+    {
+      id: 2,
+      personalInfo: {
+        firstName: "Lisa",
+        lastName: "Evilyn",
+        dateOfBirth: "1990-01-01",
+        maritalStatus: "Single",
+        img: lisaImage,
+      },
+      workInfo: {
+        employmentType: "Full-time",
+        duty: "Admin Manager",
+        department: "HRM",
+        team: "HR",
+        jobTitle: "Software Engineer",
+        wages: "1000 USD",
+        joinedDate: "2015-06-15",
+        education: "Bachelor's Degree in Computer Science",
+      },
+      contactInfo: {
+        region: "Tashkent",
+        phoneNumber: "+998 00 000 00 00",
+        email: "abdulla@example.com",
+      },
+      documents: {
+        document1: "resume.pdf",
+        document2: "coverletter.pdf",
+      },
+      reportInfo: {
+        supervisor: "Jane William",
+        firstApprover: "Jane Smith",
+        secondApprover: "Robert Brown",
+      },
+    },
+    {
+      id: 3,
+      personalInfo: {
+        firstName: "John",
+        lastName: "Swith",
+        dateOfBirth: "1990-01-01",
+        maritalStatus: "Single",
+        img: johnImage,
       },
       workInfo: {
         employmentType: "Full-time",
