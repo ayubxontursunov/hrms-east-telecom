@@ -1,5 +1,4 @@
-# <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;"> HRMS (Human Resource Management System)
-
+# <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;">  HRMS (Human Resource Management System)
 
 ## Overview
 
@@ -63,7 +62,7 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
    npm install```
    
 ### Running the Application
-**Frontend**:
+- **Frontend**:
    ```bash
    npm run dev```
 
