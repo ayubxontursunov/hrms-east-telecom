@@ -72,4 +72,4 @@ Once both servers are running, you can access the application at http://localhos
 
 
 ## Screenshots
-
+<img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;">
