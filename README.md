@@ -67,7 +67,7 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
   
 ## Usage
 
-Once both servers are running, you can access the application at http://localhost:3000. Navigate through the HRMS platform to explore its features.
+Once both servers are running, you can access the application at http://localhost:5173. Navigate through the HRMS platform to explore its features.
 
 ## Screenshots
 <p align="center">
