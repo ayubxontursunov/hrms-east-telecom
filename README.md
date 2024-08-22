@@ -6,9 +6,11 @@
   </tr>
 </table>
 
-<img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="float: left; margin-right: 10px;"> 
+<p>
+  <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
+  <span style="font-size: 2rem; font-weight: bold;">HRMS (Human Resource Management System)</span>
+</p>
 
-# HRMS (Human Resource Management System)
 
 
 ## Overview
