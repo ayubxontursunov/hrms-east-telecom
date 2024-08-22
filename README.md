@@ -73,8 +73,15 @@ Once both servers are running, you can access the application at http://localhos
 
 ## Screenshots
 <p align="center">
-  <img src="src/image/screenshot_dash.png" alt="Dashboard Screenshot" width="300" style="margin-right: 300px;">
-  <img src="src/image/screenshot_dash2.png" alt="Dashboard Screenshot 2" width="300" style="margin-right: 30px;">
-  <img src="src/image/screenshot_prof.png" alt="Profile Screenshot" width="300">
+  <span style="display: inline-block; margin-right: 20px;">
+    <img src="src/image/screenshot_dash.png" alt="Dashboard Screenshot" width="300">
+  </span>
+  <span style="display: inline-block; margin-right: 20px;">
+    <img src="src/image/screenshot_dash2.png" alt="Dashboard Screenshot 2" width="300">
+  </span>
+  <span style="display: inline-block;">
+    <img src="src/image/screenshot_prof.png" alt="Profile Screenshot" width="300">
+  </span>
 </p>
+
 
