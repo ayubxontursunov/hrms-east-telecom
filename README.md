@@ -1,17 +1,4 @@
-# <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;">  HRMS (Human Resource Management System)
-<table>
-  <tr>
-    <td><img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50"></td>
-    <td><h1>HRMS (Human Resource Management System)</h1></td>
-  </tr>
-</table>
-
-<p>
-  <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
-  <span style="font-size: 2rem; font-weight: bold;">HRMS (Human Resource Management System)</span>
-</p>
-
-
+# HRMS (Human Resource Management System)
 
 ## Overview
 
