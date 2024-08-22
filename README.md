@@ -63,8 +63,8 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
    npm install```
    
 ### Running the Application
--*Frontend*-:
-```bash
+**Frontend**:
+   ```bash
    npm run dev```
 
 ## Usage
