@@ -1,6 +1,6 @@
 # HRMS (Human Resource Management System)
 
-![HRMS Logo](link-to-your-logo-image)
+<img src="src/image/logo_1.png" alt="HRMS Logo">
 
 ## Overview
 
