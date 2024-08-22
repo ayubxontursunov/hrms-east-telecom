@@ -57,12 +57,13 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
    
 4. **Install dependencies**:
    ```bash
-   cd frontend
+   cd hrms-east-telecom
    npm install
    
 ### Running the Application
 - **Frontend**:
-   ```bash npm run dev
+   ```bash
+   npm run dev
   
 ## Usage
 
