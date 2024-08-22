@@ -63,9 +63,8 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
    
 ### Running the Application
 - **Frontend**:
-   ```bash
-   npm run dev```
-
+   ```bash npm run dev```
+  
 ## Usage
 
 Once both servers are running, you can access the application at http://localhost:3000. Navigate through the HRMS platform to explore its features.
@@ -78,4 +77,9 @@ Once both servers are running, you can access the application at http://localhos
   <img src="src/image/screenshot_prof.png" alt="Profile Screenshot" width="300">
 </p>
 
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any inquiries, please reach out to Ayyubkhon.
 
