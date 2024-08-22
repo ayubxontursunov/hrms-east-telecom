@@ -11,7 +11,6 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -50,20 +49,20 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/hrms.git```
+   git clone https://github.com/yourusername/hrms.git
 
 2. **Navigate to the project directory:**
    ```bash
-   cd hrms```
+   cd hrms
    
 4. **Install dependencies**:
    ```bash
    cd frontend
-   npm install```
+   npm install
    
 ### Running the Application
 - **Frontend**:
-   ```bash npm run dev```
+   ```bash npm run dev
   
 ## Usage
 
