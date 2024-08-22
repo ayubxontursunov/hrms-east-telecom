@@ -1,4 +1,4 @@
-# <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height = "50"> HRMS (Human Resource Management System)
+# <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;"> HRMS (Human Resource Management System)
 
 
 ## Overview
