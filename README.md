@@ -1,4 +1,11 @@
 # <img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50" style="vertical-align: middle;">  HRMS (Human Resource Management System)
+<table>
+  <tr>
+    <td><img src="src/image/logo_1.png" alt="HRMS Logo" width="50" height="50"></td>
+    <td><h1>HRMS (Human Resource Management System)</h1></td>
+  </tr>
+</table>
+
 
 ## Overview
 
@@ -69,7 +76,6 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
 
 Once both servers are running, you can access the application at http://localhost:3000. Navigate through the HRMS platform to explore its features.
 
-
 ## Screenshots
 <p align="center">
   <img src="src/image/screenshot_dash.png" alt="Dashboard Screenshot" width="300">
@@ -82,4 +88,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 For any inquiries, please reach out to Ayyubkhon.
+
+Developed with ❤️ by AUT interns
 
