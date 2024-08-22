@@ -51,4 +51,26 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/hrms.git
+   git clone https://github.com/yourusername/hrms.git```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd hrms```
+   
+4. **Install dependencies**:
+   ```bash
+   cd frontend
+   npm install```
+   
+### Running the Application
+-*Frontend*-:
+```bash
+   npm run dev```
+
+## Usage
+
+Once both servers are running, you can access the application at http://localhost:3000. Navigate through the HRMS platform to explore its features.
+
+
+## Screenshots
+
