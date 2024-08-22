@@ -1,6 +1,6 @@
 # HRMS (Human Resource Management System)
 
-<img src="src/image/logo_1.png" alt="HRMS Logo" width="300">
+<img src="src/image/logo_1.png" alt="HRMS Logo" width="100">
 
 ## Overview
 
