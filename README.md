@@ -69,6 +69,11 @@ HRMS is a comprehensive Human Resource Management System designed to streamline 
 
 Once both servers are running, you can access the application at http://localhost:5173. Navigate through the HRMS platform to explore its features.
 
+For logging in, the HRMS supports two roles. Please use the following credentials:
+
+- **Username**: user or admin
+- **Password**: A3x$7bP!9wZ@rQ#
+
 ## Screenshots
 <p align="center">
   <img src="src/image/screenshot_dash.png" alt="Dashboard Screenshot" width="300">
